@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="41px" viewBox="0 0 56 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Help-Center---Home-Copy-44" transform="translate(-173.000000, -3234.000000)">
+            <g id="Group-26" transform="translate(174.000000, 3235.000000)">
+                <g id="icon_deskmobile">
+                    <path d="M1.2562279,38.75 L14.9937721,38.75 C15.6884844,38.75 16.25,38.199605 16.25,37.5186513 L16.25,13.7313488 C16.25,13.050395 15.6884844,12.5 14.9937721,12.5 L1.2562279,12.5 C0.56151559,12.5 0,13.050395 0,13.7313488 L0,37.5186513 C0,38.199605 0.56151559,38.75 1.2562279,38.75 Z" id="Stroke-1" stroke="#FFFFFF" stroke-width="1.5"></path>
+                    <path d="M54,29.0333581 C54,30.2579365 52.9698956,31.25 51.6983606,31.25 L16.5,31.25 L16.5,14.375 C16.5,13.125 16.2596741,12.5 15.25,12.5 L9,12.5 L9,2.21664186 C9,1.0826717 9.88330624,0.148081191 11.0236763,0.0159861305 L51.3607869,0 C52.8188137,0 54,0.9920635 54,2.21664188 L54,29.0333581 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M31,31.25 L31,37.9774721" id="Stroke-5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M36.891436,38 L25,38" id="Stroke-7" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M53.75,23 L16.25,23" id="Stroke-10" stroke="#FFFFFF" stroke-width="1.5"></path>
+                    <path d="M0,31 L16.25,31" id="Stroke-12" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <circle id="Oval-2" fill="#FFFFFF" fill-rule="nonzero" cx="8.125" cy="35" r="1.25"></circle>
+                    <circle id="Oval-2-Copy" fill="#FFFFFF" fill-rule="nonzero" cx="31.25" cy="27.4612426" r="1.25"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

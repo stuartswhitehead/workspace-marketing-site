@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+    <title>askdev icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Help-Center---Home-Copy-14" transform="translate(-991.000000, -1683.000000)">
+            <g id="Part-4" transform="translate(121.000000, 1683.000000)">
+                <g id="ask-devs" transform="translate(870.000000, 0.000000)">
+                    <g id="askdev-icon">
+                        <path d="M80,160 C35.81722,160 0,124.18278 0,80 C0,35.81722 35.81722,0 80,0 C124.18278,1.428258e-13 160,35.81722 160,80 C160,124.18278 124.18278,160 80,160 Z" id="Shape" fill="#FFFFFF"></path>
+                        <g id="Group-15" transform="translate(40.000000, 47.000000)" stroke="#00A78F" stroke-width="1.5" stroke-linecap="round">
+                            <path d="M37.3568593,60.119 L19.6928429,60.119 C8.93599498,60.0943864 0.209474623,51.4069892 0.140183305,40.654 L0.140183305,20.117 C0.208927095,9.36357907 8.93556699,0.675505061 19.6928429,0.65075 L60.0583414,0.65075 C65.2195622,0.639391292 70.1715872,2.68902686 73.8141737,6.34426789 C77.4567602,9.99950892 79.4882186,14.9576178 79.4571986,20.117 L79.4571986,40.654 C79.4604319,51.37718 70.7851119,60.0820796 60.0583414,60.119 L51.2465901,60.119 L39.7981908,79.94075" id="_Path_23"></path>
+                            <polyline id="Shape" stroke-linejoin="round" points="28.7631823 36.4575 22.6686065 30.365 28.7631823 24.27"></polyline>
+                            <polyline id="Shape" stroke-linejoin="round" points="50.9932538 24.27 57.0878296 30.365 50.9932538 36.4575"></polyline>
+                            <path d="M36.1659537,36.92225 L43.5917329,23.8065" id="Shape" stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

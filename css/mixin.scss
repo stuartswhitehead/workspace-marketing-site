@@ -1,0 +1,67 @@
+@mixin animation($args...) {
+	-webkit-animation: $args;
+	-ms-animation: $args;
+	-moz-animation: $args;
+	animation: $args;
+}
+
+@mixin animation-delay($delay) {
+	-ms-animation-delay: $delay;
+	-webkit-animation-delay: $delay;
+	-moz-animation-delay: $delay;
+	animation-delay: $delay;
+}
+
+@mixin animation-name($name) {
+	-ms-animation-name: $name;
+	-webkit-animation-name: $name;
+	-moz-animation-name: $name;
+	-o-animation-name: $name;
+	animation-name: $name;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+@mixin transform($args...) {
+	-webkit-transform: $args;
+	-moz-transform: $args;
+	-o-transform: $args;
+	-ms-transform: $args;
+	transform: $args;
+}
+
+@mixin transition-delay($args...) {
+	-webkit-transition-delay: $args;
+	-moz-transition-delay: $args;
+	-o-transition-delay: $args;
+	-ms-transition-delay: $args;
+	transition-delay: $args;
+}
+
+@mixin transition-timing-function($args...) {
+	-webkit-transition-timing-function: $args;
+	-moz-transition-timing-function: $args;
+	-o-transition-timing-function: $args;
+	-ms-transition-timing-function: $args;
+	transition-timing-function: $args;
+}

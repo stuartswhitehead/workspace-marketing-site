@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>footer_status</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Help-Center---Home-Copy-32" transform="translate(-1035.000000, -3378.000000)" fill="#9B9B9B">
+            <g id="Footer" transform="translate(-1.000000, 3333.000000)">
+                <g id="Links" transform="translate(343.000000, 45.000000)">
+                    <g id="Status" transform="translate(693.000000, 0.000000)">
+                        <g id="Info_16">
+                            <g id="footer_status">
+                                <path d="M8,0.138 C3.665,0.138 0.138,3.665 0.138,8 C0.138,12.335 3.665,15.862 8,15.862 C12.335,15.862 15.862,12.335 15.862,8 C15.862,3.665 12.335,0.138 8,0.138 L8,0.138 Z M8,14.862 C4.21204959,14.8575916 1.14240844,11.7879504 1.138,8 C1.138,4.216 4.217,1.138 8,1.138 C11.783,1.138 14.862,4.216 14.862,8 C14.8575916,11.7879504 11.7879504,14.8575916 8,14.862 L8,14.862 Z" id="Shape"></path>
+                                <circle id="Oval" cx="8" cy="4.183" r="1"></circle>
+                                <path d="M8,5.851 C7.72385763,5.851 7.5,6.07485763 7.5,6.351 L7.5,12.584 C7.5,12.8601424 7.72385763,13.084 8,13.084 C8.27614237,13.084 8.5,12.8601424 8.5,12.584 L8.5,6.351 C8.5,6.07485763 8.27614237,5.851 8,5.851 L8,5.851 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,32 @@
+@import 'reset';
+@import 'ibm-colors';
+
+html, body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.clear {
+	clear: both;
+}
+
+.floatLeft {
+	float: left;
+}
+.floatRight {
+	float: right;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
