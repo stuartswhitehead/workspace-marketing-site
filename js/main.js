@@ -35,24 +35,25 @@ for (var i = 0; i < tabLinks.length; i++) {
 // navDropdownButton.addEventListener("click", dropdownClick);
 
 // Click to expand FAQ questions to show answer
-var faqs = document.querySelectorAll('main #article-3 .faq');
+var faqs = document.querySelectorAll('main #article-3 .faq .question');
 function faqClick(e) {
 	e = e || window.event;
 	var target = e.currentTarget;
+	var faq = target.parentElement;
 
-	if (target.getAttribute('data-state') === 'collapsed') {
-		$(target).animate({
-			height: $(target).get(0).scrollHeight
+	if (faq.getAttribute('data-state') === 'collapsed') {
+		$(faq).animate({
+			height: $(faq).get(0).scrollHeight
 		}, 300, function() {
 			$(this).height('auto');
 		});
-		target.setAttribute('data-state', 'expanded');
+		faq.setAttribute('data-state', 'expanded');
 	}
 	else {
-		$(target).animate({
+		$(faq).animate({
 			height: '6rem'
 		}, 300);
-		target.setAttribute('data-state', 'collapsed');
+		faq.setAttribute('data-state', 'collapsed');
 	}
 }
 for (var i = 0; i < faqs.length; i++) {
