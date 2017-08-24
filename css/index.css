@@ -1195,7 +1195,7 @@ main #primary-content #article-4 .use-case .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 3.75rem 0; }
+  padding: 3.75rem 15px; }
   main #primary-content #article-4 .use-case .container img {
     height: 23.375rem; }
   main #primary-content #article-4 .use-case .container .text {
@@ -1285,7 +1285,11 @@ footer {
 @media only screen and (max-width: 82em) {
   .container {
     max-width: 61em; }
-  #article-1-section-2 .overview-img-and-text .images .overview-img-wrapper img {
+  main #primary-content article .header .title {
+    display: none; }
+  main #primary-content article .header .title-no-break {
+    display: initial; }
+  main #primary-content article #article-1-section-2 .overview-img-and-text .images .overview-img-wrapper img {
     width: 81%; }
   footer .container ol {
     justify-content: space-between; }
@@ -1352,10 +1356,7 @@ footer {
     flex-wrap: wrap; }
     main #primary-content article .header .title {
       flex: 0 0 100%;
-      margin-bottom: 2rem;
-      display: none; }
-    main #primary-content article .header .title-no-break {
-      display: initial; }
+      margin-bottom: 2rem; }
     main #primary-content article .header .description {
       flex: 0 0 100%; }
   main #primary-content article #article-1-section-2 .overview-img-and-text {
@@ -1386,6 +1387,8 @@ footer {
   main #primary-content article #article-1-section-4 #sections section {
     flex: 0 0 45%;
     margin-bottom: 2rem; }
+  main #primary-content #article-4 .use-case .container img {
+    height: 16rem; }
   footer .container ol > a, footer .container ol #appLinks {
     flex: 0 0 45%;
     margin: 0.4rem 0; } }
@@ -1417,4 +1420,8 @@ footer {
       main #primary-content article .features-tables table:nth-of-type(2) tr:nth-child(odd) {
         background: initial; }
       main #primary-content article .features-tables table:nth-of-type(2) tr:nth-child(even) {
-        background: #f6f6f6; } }
+        background: #f6f6f6; }
+  main #primary-content #article-4 .use-case .container img {
+    display: none; }
+  main #primary-content #article-4 .use-case .container .text {
+    flex: 0 0 100%; } }
