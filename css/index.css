@@ -79,7 +79,8 @@ body {
 .container {
   margin: 0 auto;
   padding: 1rem 15px;
-  max-width: 79rem; }
+  max-width: 79rem;
+  overflow: hidden; }
 
 h2 {
   font-size: 2em;
@@ -1397,7 +1398,7 @@ footer {
   body {
     font-size: 15px; }
   .container {
-    max-width: 37em; }
+    max-width: 37rem; }
   nav .container > a {
     flex: 0 0 75%; }
   main #banner .container .attributes {
@@ -1405,6 +1406,11 @@ footer {
     padding-left: 28%; }
     main #banner .container .attributes div {
       flex: 0 0 100%; }
+  main #banner .container #bg-icons {
+    width: 37rem;
+    left: -12rem; }
+    main #banner .container #bg-icons .bg-icon-wrapper:nth-of-type(2), main #banner .container #bg-icons .bg-icon-wrapper:nth-of-type(3), main #banner .container #bg-icons .bg-icon-wrapper:nth-of-type(15), main #banner .container #bg-icons .bg-icon-wrapper:nth-of-type(16) {
+      visibility: hidden; }
   main #primary-content article #article-1-section-2 .overview-img-and-text .images {
     flex: 0 0 82%; }
   main #primary-content article #article-1-section-4 #sections section {
