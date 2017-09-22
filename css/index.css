@@ -1445,10 +1445,16 @@ footer {
     font-size: 1.45em; }
   .button-container .button-large:hover {
     padding: 12px 19px; }
+  main .tabs .container ol li {
+    margin-right: 1.5em;
+    font-size: 0.93em; }
   main #primary-content article .secondary-section {
     padding: 4.2rem 0;
     color: white; }
     main #primary-content article .secondary-section .container img {
       display: none; }
     main #primary-content article .secondary-section .container .text {
-      margin-left: 0; } }
+      margin-left: 0; }
+  footer .container ol > a, footer .container ol #appLinks {
+    flex: 0 0 100%;
+    margin: 0.4rem 0; } }

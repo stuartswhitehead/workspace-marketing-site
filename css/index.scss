@@ -1190,6 +1190,17 @@ footer {
 	}
 
 	main {
+		.tabs {
+			.container {
+				ol {
+					li {
+						margin-right: 1.5em;
+						font-size: 0.93em;
+					}
+				}
+			}
+		}
+		
 		#primary-content {
 			article {
 				.secondary-section {
@@ -1205,6 +1216,18 @@ footer {
 							margin-left: 0;
 						}
 					}
+				}
+			}
+		}
+	}
+
+	footer {
+		.container {
+			ol {
+
+				> a, #appLinks {
+					flex: 0 0 100%;
+					margin: 0.4rem 0;
 				}
 			}
 		}

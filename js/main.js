@@ -1,6 +1,3 @@
-// Scroll top value to reset viewport top to be at the tabs
-var scrollTopReset = 726;
-
 // Clicking tabs for different articles
 var tabLinks = document.querySelectorAll('.tabs li');
 
@@ -19,7 +16,8 @@ function tabClick(e) {
 	newArticle.setAttribute('data-state', 'active');
 
 	// Animate scroll to top of tabs
-	$("html, body").animate({ scrollTop: scrollTopReset }, 200);
+	var tabMarker = $('#tab-marker').offset().top;
+	$("html, body").animate({ scrollTop: tabMarker }, 200);
 }
 for (var i = 0; i < tabLinks.length; i++) {
 	tabLinks[i].addEventListener("click", tabClick);
@@ -84,22 +82,29 @@ function featuresButtonClick() {
 	document.querySelector('#article-2').setAttribute('data-state', 'active');
 
 	// Animate scroll to top of tabs
-	$("html, body").animate({ scrollTop: scrollTopReset }, 200);
+	var tabMarker = $('#tab-marker').offset().top;
+	$("html, body").animate({ scrollTop: tabMarker }, 200);
 }
 featuresButton.addEventListener("click", featuresButtonClick);
 
 // When about to scroll tabs off-screen top, change them to fixed position
 function bodyScroll() {
+	// How far you are scrolled down the page
 	var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+	// Distance of the top of .tabs from your current scrolled Y position
 	var tabTop = $('.tabs').offset().top - scrollTop;
+	// Distance of the top of unfixed .tabs from the top of the entire page
+	var tabMarker = $('#tab-marker').offset().top;
 
-	if (scrollTop <= scrollTopReset + 1 ) {
+	// If you scroll up past where the tabs are placed when they are not fixed, un-fix tabs
+	if (scrollTop <= tabMarker + 1) {
 		$(".tabs").removeClass("tabs-fixed");
-		$("#banner").css("margin-bottom", "0");
+		$("#tab-marker").css("height", "0");
 	}
+	// If the top of .tabs meets the top of the scrolled window, fix .tabs
 	else if (tabTop <= 1) {
 		$(".tabs").addClass("tabs-fixed");
-		$("#banner").css("margin-bottom", "3.921rem");
+		$("#tab-marker").css("height", "3.921rem");
 	}
 	
 }
