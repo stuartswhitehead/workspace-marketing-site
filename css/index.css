@@ -1403,9 +1403,10 @@ footer {
     flex: 0 0 75%; }
   main #banner .container .attributes {
     justify-content: flex-start;
-    padding-left: 28%; }
+    width: 14rem; }
     main #banner .container .attributes div {
-      flex: 0 0 100%; }
+      flex: 0 0 100%;
+      margin-right: 0; }
   main #banner .container #bg-icons {
     width: 37rem;
     left: -12rem; }
@@ -1431,3 +1432,23 @@ footer {
     display: none; }
   main #primary-content #article-4 .use-case .container .text {
     flex: 0 0 100%; } }
+
+@media only screen and (max-width: 25em) {
+  .container {
+    padding: 1rem 20px; }
+  nav .container > a {
+    flex: 0 0 15%; }
+    nav .container > a h5 {
+      display: none; }
+  .button-container .button-large {
+    padding: 13px 20px;
+    font-size: 1.45em; }
+  .button-container .button-large:hover {
+    padding: 12px 19px; }
+  main #primary-content article .secondary-section {
+    padding: 4.2rem 0;
+    color: white; }
+    main #primary-content article .secondary-section .container img {
+      display: none; }
+    main #primary-content article .secondary-section .container .text {
+      margin-left: 0; } }

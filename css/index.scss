@@ -1083,10 +1083,11 @@ footer {
 			.container {
 				.attributes {
 					justify-content: flex-start;
-					padding-left: 28%;
+					width: 14rem;
 
 					div {
 						flex: 0 0 100%;
+						margin-right: 0;
 					}
 				}
 
@@ -1155,6 +1156,53 @@ footer {
 
 						.text {
 							flex: 0 0 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 25em) {
+	.container {
+		padding: 1rem 20px;
+	}
+
+	nav {
+		.container {
+			> a {
+				flex: 0 0 15%;
+
+				h5 {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.button-container .button-large {
+		padding: 13px 20px;
+		font-size: 1.45em;
+	}
+	.button-container .button-large:hover {
+	    padding: 12px 19px;
+	}
+
+	main {
+		#primary-content {
+			article {
+				.secondary-section {
+					padding: 4.2rem 0;
+					color: white;
+
+					.container {
+						img {
+							display: none;
+						}
+
+						.text {
+							margin-left: 0;
 						}
 					}
 				}
