@@ -1211,6 +1211,27 @@ main #primary-content #article-4 .use-case:nth-child(even) {
 main #primary-content #article-4 .secondary-section {
   background: #00A78F; }
 
+main #primary-content #article-5 .main-section > section {
+  padding: 3.375rem 0; }
+  main #primary-content #article-5 .main-section > section h4 {
+    font-weight: 600;
+    color: #1D3649;
+    font-size: 2.875em;
+    margin: 0 auto;
+    text-align: center; }
+  main #primary-content #article-5 .main-section > section .flex-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    main #primary-content #article-5 .main-section > section .flex-content p {
+      flex: 0 0 50%; }
+
+main #primary-content #article-5 .main-section > section:nth-child(even) {
+  background: #FAFAFA; }
+
+main #primary-content #article-5 .secondary-section {
+  background: #DB2780; }
+
 main #primary-content article[data-state="active"] {
   display: block; }
 

@@ -23,6 +23,8 @@ $teal3: #008673;
 $purple1: #BF93EB;
 $purple2: #8B5BDC;
 
+$pink1: #DB2780;
+
 $bg-icons-width: 51.5rem;
 
 body {
@@ -734,6 +736,39 @@ main {
 				background: $teal1;
 			}
 		}
+		#article-5 {
+			.main-section {
+				> section {
+					padding: 3.375rem 0;
+
+					h4 {
+						font-weight: 600;
+						color: $navy1;
+						font-size: 2.875em;
+						margin: 0 auto;
+						text-align: center;
+					}
+
+					.flex-content {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						p {
+							flex: 0 0 50%;
+						}
+					}
+				}
+
+				> section:nth-child(even) {
+					background: $gray7;
+				}
+			}
+
+			.secondary-section {
+				background: $pink1;
+			}
+		}
 
 		article[data-state="active"] {
 			display: block;
@@ -1200,7 +1235,7 @@ footer {
 				}
 			}
 		}
-		
+
 		#primary-content {
 			article {
 				.secondary-section {
