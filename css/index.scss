@@ -646,22 +646,22 @@ main {
 
 			.faq {
 				border-top: 1px dashed $border-color;
-				height: 6rem;
+				height: 6.5rem;
 				overflow: hidden;
 				@include transition(max-height .3s ease-out);
 
 				.question {
 					cursor: pointer;
-					height: 6rem;
+					height: 6.5rem;
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
 
 					h3 {
-						font-size: 1.5625em;
+						font-size: 1.5em;
 						line-height: 1.44;
 						font-weight: 600;
-						flex: 0 0 80%;
+						flex: 0 0 85%;
 						color: $link-color;
 					}
 
@@ -1142,6 +1142,14 @@ footer {
 						}
 						tr:nth-child(even) {
 							background: $gray3;
+						}
+					}
+				}
+
+				.faq {
+					.question {
+						h3 {
+							font-size: 1.2em;
 						}
 					}
 				}
