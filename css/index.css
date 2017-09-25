@@ -1148,7 +1148,7 @@ main #primary-content article {
       margin-left: 10%; }
   main #primary-content article .faq {
     border-top: 1px dashed #A5AFB6;
-    height: 6rem;
+    height: 6.5rem;
     overflow: hidden;
     -webkit-transition: max-height 0.3s ease-out;
     -moz-transition: max-height 0.3s ease-out;
@@ -1156,15 +1156,15 @@ main #primary-content article {
     transition: max-height 0.3s ease-out; }
     main #primary-content article .faq .question {
       cursor: pointer;
-      height: 6rem;
+      height: 6.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center; }
       main #primary-content article .faq .question h3 {
-        font-size: 1.5625em;
+        font-size: 1.5em;
         line-height: 1.44;
         font-weight: 600;
-        flex: 0 0 80%;
+        flex: 0 0 85%;
         color: #4178be; }
       main #primary-content article .faq .question img {
         flex: 0 0 auto;
@@ -1449,6 +1449,8 @@ footer {
         background: initial; }
       main #primary-content article .features-tables table:nth-of-type(2) tr:nth-child(even) {
         background: #f6f6f6; }
+  main #primary-content article .faq .question h3 {
+    font-size: 1.2em; }
   main #primary-content #article-4 .use-case .container img {
     display: none; }
   main #primary-content #article-4 .use-case .container .text {

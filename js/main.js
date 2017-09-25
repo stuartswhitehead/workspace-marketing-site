@@ -49,7 +49,7 @@ function faqClick(e) {
 	}
 	else {
 		$(faq).animate({
-			height: '6rem'
+			height: '6.5rem'
 		}, 300);
 		faq.setAttribute('data-state', 'collapsed');
 	}
