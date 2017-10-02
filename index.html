@@ -711,8 +711,11 @@
                             <section>
                                 <div class="container">
                                     <h4>Our technology in action</h4>
-                                    <div class="flex-content">
-                                        <img src="./images/use_case/Developers-image@2x.png" />
+                                    <div class="flex-columns">
+                                        <div class="left-column">
+                                            <img src="./images/developers-tab/todoit_icon.svg" />
+                                            <p>ToDo It</p>
+                                        </div>
                                         <p>
                                             "ToDo It" lets users manage to dos without leaving Watson Workspace. The app lets users create, edit, view, or assign to dos from Workspace, using slash commands or per-message actions. The app can detect potential actions in the conversation and suggest them as to-dos, using our cognitive conversation APIs. This can be a native app in Workspace or can push and pull information from the user's preferred to-do app, such as Wunderlist or Todoist.
                                         </p>
@@ -722,11 +725,13 @@
 
                             <section>
                                 <div class="container">
-                                    <div class="text">
-                                        <h5>How the APIs are used</h5>
-                                        <p>
-                                            {API link} and {API link} let the app privately prompt users to interact, so users can take actions without leaving the conversation or having their private actions visible to others.
-                                        </p>
+                                    <h5>How the APIs are used</h5>
+                                    <div class="flex-columns">
+                                        <div class="left-column">
+                                            <p>
+                                                {API link} and {API link} let the app privately prompt users to interact, so users can take actions without leaving the conversation or having their private actions visible to others.
+                                            </p>
+                                        </div>
                                         <p>
                                             {API link} listens to events and annotations to detect potential actions in the conversation. {API} pulls in metadata to see if the user is mentioned (to increase confidence that it's relevant to the user) or to detect if this is an assignment to another user.
                                         </p>
@@ -736,8 +741,17 @@
 
                             <section>
                                 <div class="container">
-                                    <div class="text">
-                                        
+                                    <div id="message">
+                                        <img src="./images/developers-tab/avatar.png" />
+                                        <div class="text">
+                                            <p class="top-text">
+                                                Jacqueline Scott
+                                                <span class="time">7:34 AM</span>
+                                            </p>
+                                            <p class="bottom-text">
+                                                That sounds great. <span class="action">Please send me the review of the presentation by tomorrow.</span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </section>

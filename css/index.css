@@ -1217,14 +1217,60 @@ main #primary-content #article-5 .main-section > section {
     font-weight: 600;
     color: #1D3649;
     font-size: 2.875em;
-    margin: 0 auto;
+    margin: 0 auto 4.375rem;
     text-align: center; }
-  main #primary-content #article-5 .main-section > section .flex-content {
+  main #primary-content #article-5 .main-section > section h5 {
+    color: #1D3649;
+    font-size: 2em;
+    font-weight: 500; }
+  main #primary-content #article-5 .main-section > section .flex-columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    main #primary-content #article-5 .main-section > section .flex-columns > p, main #primary-content #article-5 .main-section > section .flex-columns .left-column {
+      flex: 0 0 46%; }
+  main #primary-content #article-5 .main-section > section #message {
     display: flex;
     align-items: center;
     justify-content: center; }
-    main #primary-content #article-5 .main-section > section .flex-content p {
-      flex: 0 0 50%; }
+    main #primary-content #article-5 .main-section > section #message img {
+      height: 3.6rem;
+      width: 3.6rem; }
+    main #primary-content #article-5 .main-section > section #message .text {
+      margin-left: 2rem; }
+      main #primary-content #article-5 .main-section > section #message .text .top-text {
+        color: #1D3649;
+        font-size: 1.462em;
+        font-weight: 500; }
+        main #primary-content #article-5 .main-section > section #message .text .top-text .time {
+          color: #777677;
+          font-weight: 400;
+          margin-left: 0.3rem; }
+      main #primary-content #article-5 .main-section > section #message .text .bottom-text {
+        margin-top: 1.3rem;
+        font-size: 1.8em;
+        font-weight: 300;
+        color: #152935; }
+        main #primary-content #article-5 .main-section > section #message .text .bottom-text .action {
+          text-decoration: underline;
+          text-decoration-color: #8B5BDC; }
+
+main #primary-content #article-5 .main-section > section:nth-of-type(1) .flex-columns .left-column {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  main #primary-content #article-5 .main-section > section:nth-of-type(1) .flex-columns .left-column > p {
+    color: #1D3649;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin-left: 1.375rem;
+    margin-bottom: 0; }
+
+main #primary-content #article-5 .main-section > section:nth-of-type(1) .flex-columns > p {
+  line-height: 1.875rem; }
+
+main #primary-content #article-5 .main-section > section:nth-of-type(3) {
+  padding: 2.625rem 0; }
 
 main #primary-content #article-5 .main-section > section:nth-child(even) {
   background: #FAFAFA; }

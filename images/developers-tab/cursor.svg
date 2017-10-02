@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="383px" height="377px" viewBox="0 0 383 377" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Cursor</title>
+    <defs>
+        <path d="M0,0 L0,24.8571429 L6.75,18.6428571 L12.375,29 L14.625,29 C14.625,29 16.0777355,27.6527108 15.75,26.9285714 C14.2027355,23.5098536 10.125,16.5714286 10.125,16.5714286 L18,16.5714286 L0,0 Z" id="path-11"></path>
+        <filter x="-43.1%" y="-23.3%" width="186.1%" height="153.4%" filterUnits="objectBoundingBox" id="filter-12">
+            <feMorphology radius="1.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="InternalSite-Developers" transform="translate(-837.000000, -2261.000000)">
+            <g id="Group-26" transform="translate(184.000000, 1215.000000)">
+                <g id="Group-23">
+                    <g id="Group-22" transform="translate(338.000000, 1047.000000)">
+                        <g id="ToDo-Dropdown-actions" transform="translate(322.000000, 0.000000)">
+                            <g id="cursor">
+                                <g id="Default">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                                    <use fill="#000000" fill-rule="evenodd" xlink:href="#path-11"></use>
+                                    <path stroke="#FFFFFF" stroke-width="1.25" d="M11.2119586,17.1964286 C11.3468361,17.4295111 11.489052,17.6761587 11.6374182,17.9344918 C12.3670827,19.2049733 13.096793,20.4986793 13.7782125,21.7391898 C13.8975382,21.9564196 14.0145116,22.170454 14.1289697,22.3810351 C15.0844995,24.1390292 15.8348102,25.6001601 16.3193986,26.6708695 C16.5113258,27.0949372 16.4309021,27.5488315 16.1844789,28.0266966 C16.0611299,28.2658957 15.8960319,28.508566 15.6989126,28.754057 C15.4568017,29.0555801 15.2171304,29.3032583 15.0499974,29.45826 L14.8702074,29.625 L12.0032124,29.625 L6.58343804,19.645733 L-0.625,26.2820728 L-0.625,-1.42492994 L19.601648,17.1964286 L11.2119579,17.1964286 Z"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
