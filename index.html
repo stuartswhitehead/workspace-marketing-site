@@ -758,13 +758,52 @@
 
                             <section>
                                 <div class="container">
-                                    <div class="text">
-                                        <p>
-                                            {API link} adds options to the per-message dropdown list / adds more actions you can take on a message 
-                                        </p>
+                                    <div id="menu-actions">
+                                        <div id="menu-actions-text">
+                                            <p>
+                                                {API link} adds options to the per-message dropdown list/adds more actions you can take on a message 
+                                            </p>
+                                        </div>
+                                        <div id="menu-actions-img">
+                                            <img src="./images/developers-tab/menu_actions.svg" />
+                                            <div id="ui-dropdown" class="ui">
+                                                <div class="message-action">
+                                                    <p class="app-title">Watson Workspace</p>
+                                                    <p class="app-action">Train Watson</p>
+                                                </div>
+                                                <div class="message-action selected">
+                                                    <p class="app-title">ToDo Work</p>
+                                                    <p class="app-action">Create ToDo It</p>
+                                                </div>
+                                                <div class="message-action">
+                                                    <p class="app-title">WebEx</p>
+                                                    <p class="app-action">Start Meeting</p>
+                                                </div>
+                                                <img src="./images/developers-tab/cursor.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="slash-command">
                                         <p>
                                             {API link} lets users interact via slash command
                                         </p>
+                                        <div id="ui-slash-command" class="ui">
+                                            <div id="top-row">
+                                                <p>ToDo Work</p>
+                                                <div id="line"></div>
+                                            </div>
+                                            <div id="bottom-row">
+                                                <p class="command">
+                                                    /todoit
+                                                </p>
+                                                <p class="args">
+                                                    [title]
+                                                </p>
+                                                <p class="help-text">
+                                                    Create a new ToDo
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </section>

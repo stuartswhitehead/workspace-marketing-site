@@ -1254,6 +1254,81 @@ main #primary-content #article-5 .main-section > section {
         main #primary-content #article-5 .main-section > section #message .text .bottom-text .action {
           text-decoration: underline;
           text-decoration-color: #8B5BDC; }
+  main #primary-content #article-5 .main-section > section .ui {
+    border-radius: 0.338rem;
+    -webkit-box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2); }
+  main #primary-content #article-5 .main-section > section #menu-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5rem; }
+    main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-text {
+      flex: 0 0 18.75rem;
+      margin-right: 2rem;
+      margin-top: 3.5rem; }
+      main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-text p {
+        margin-bottom: 0; }
+    main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown {
+      position: relative;
+      width: 23rem;
+      padding: 1.125rem 0; }
+      main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action {
+        padding: 1.125rem 2.475rem; }
+        main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action .app-title {
+          color: #777677;
+          font-size: 1.125em; }
+        main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action .app-action {
+          color: #1D3649;
+          font-size: 1.575em; }
+      main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown > img {
+        position: absolute;
+        top: 11.5rem;
+        left: 14rem; }
+      main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action:nth-of-type(2) .app-action {
+        font-weight: 500; }
+      main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action.selected {
+        position: relative; }
+        main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action.selected .app-action::before {
+          content: "";
+          height: 2.5rem;
+          width: 0.45rem;
+          border-radius: 0.45rem;
+          background-color: #00B4A0;
+          position: absolute;
+          left: 0;
+          top: 2.6rem; }
+  main #primary-content #article-5 .main-section > section #slash-command {
+    width: 46rem; }
+    main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command {
+      padding: 1.125rem 1.5rem;
+      border: 1px solid #ECECEC; }
+      main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command > div {
+        display: flex;
+        align-items: center; }
+      main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #top-row {
+        margin-bottom: 1rem; }
+        main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #top-row p {
+          color: #777677;
+          font-size: 1.35em;
+          margin-right: 0.5rem; }
+        main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #top-row #line {
+          background-color: rgba(149, 159, 159, 0.1);
+          height: 0.15rem;
+          width: 35.55rem; }
+      main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #bottom-row .command {
+        color: #1D3649;
+        font-size: 1.8em;
+        margin-right: 1rem; }
+      main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #bottom-row .args {
+        color: #777677;
+        font-size: 1.462em; }
+      main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #bottom-row .help-text {
+        color: #777677;
+        font-size: 1.462em;
+        text-align: right;
+        font-style: italic;
+        margin-left: auto; }
 
 main #primary-content #article-5 .main-section > section:nth-of-type(1) .flex-columns .left-column {
   display: flex;

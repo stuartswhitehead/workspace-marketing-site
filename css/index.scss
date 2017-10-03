@@ -20,6 +20,7 @@ $link-color: #4178be;
 $teal1: #00A78F;
 $teal2: #40D5BB;
 $teal3: #008673;
+$teal4: #00B4A0;
 
 $purple1: #BF93EB;
 $purple2: #8B5BDC;
@@ -803,6 +804,130 @@ main {
 							}
 						}
 					}
+
+					.ui {
+						border-radius: 0.338rem;
+						@include box-shadow(0 5px 7px 0 rgba(0,0,0,0.2));
+					}
+
+					#menu-actions {
+						display: flex;
+						justify-content: flex-end;
+						margin-bottom: 5rem;
+
+						#menu-actions-text {
+							flex: 0 0 18.75rem;
+							margin-right: 2rem;
+							margin-top: 3.5rem;
+
+							p {
+								margin-bottom: 0;
+							}
+						}
+
+						#menu-actions-img {
+
+							#ui-dropdown {
+								position: relative;
+								width: 23rem;
+								padding: 1.125rem 0;
+
+								.message-action {
+									padding: 1.125rem 2.475rem;
+
+									.app-title {
+										color: $gray2;
+										font-size: 1.125em;
+									}
+
+									.app-action {
+										color: $navy1;
+										font-size: 1.575em;
+									}
+								}
+
+								> img {
+									position: absolute;
+									top: 11.5rem;
+									left: 14rem;
+								}
+
+								.message-action:nth-of-type(2) {
+									.app-action {
+										font-weight: 500;
+									}
+								}
+
+								.message-action.selected {
+									position: relative;
+
+									.app-action::before {
+										content: "";
+										height: 2.5rem;
+										width: 0.45rem;
+										border-radius: 0.45rem;
+										background-color: $teal4;
+										position: absolute;
+										left: 0;
+										top: 2.6rem;
+									}
+								}
+							}
+						}
+					}
+
+					#slash-command {
+						width: 46rem;
+
+						#ui-slash-command {
+							padding: 1.125rem 1.5rem;
+							border: 1px solid #ECECEC;
+
+							> div {
+								display: flex;
+								align-items: center;
+							}
+
+							#top-row {
+								margin-bottom: 1rem;
+
+								p {
+									color: $gray2;
+									font-size: 1.35em;
+									margin-right: 0.5rem;
+								}
+
+								#line {
+									background-color: rgba(149,159,159,0.1);
+									height: 0.15rem;
+									width: 35.55rem;
+								}
+							}
+
+							#bottom-row {
+								.command {
+									color: $navy1;
+									font-size: 1.8em;
+									margin-right: 1rem;
+								}
+
+								.args {
+									color: $gray2;
+									font-size: 1.462em;
+								}
+
+								.help-text {
+									color: $gray2;
+									font-size: 1.462em;
+									text-align: right;
+									font-style: italic;
+									margin-left: auto;
+								}
+							}
+						}
+					}
+
+					
 				}
 
 				> section:nth-of-type(1) {
