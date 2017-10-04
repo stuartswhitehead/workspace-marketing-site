@@ -24,6 +24,7 @@ $teal4: #00B4A0;
 
 $purple1: #BF93EB;
 $purple2: #8B5BDC;
+$purple3: #9855D4;
 
 $pink1: #DB2780;
 
@@ -382,6 +383,23 @@ main {
 				.container {
 					display: flex;
 					align-items: flex-start;
+
+					.white-circle {
+						flex: 0 0 10rem;
+						background-color: white;
+						border-radius: 25rem;
+						height: 10rem;
+						width: 10rem;
+
+						img {
+							height: 5.4rem;
+							margin-top: calc(5rem - 43.2px);
+							margin-left: calc(5rem - 32.5px);
+						}
+					}
+					> img {
+						flex: 0 0 10rem;
+					}
 
 					.text {
 						margin-left: 4.125rem;
@@ -927,7 +945,107 @@ main {
 						}
 					}
 
-					
+					#section-5 {
+						display: flex;
+						justify-content: center;
+
+						p {
+							margin-bottom: 0;
+						}
+
+						.left-content {
+							flex: 0 0 33rem;
+							margin-right: 3rem;
+
+							p, span {
+								font-size: 1.575rem;
+								color: $navy1;
+							}
+
+							.card-titles {
+								display: flex;
+								align-items: center;
+								margin-bottom: 2.5rem;
+
+								img {
+									height: 2.025rem;
+									width: 2.025rem;
+									margin-right: 1rem;
+								}
+
+								.app-action {
+									font-weight: 500;
+									margin-left: 2rem;
+								}
+							}
+
+							.card {
+								padding: 2rem;
+								background-color: white;
+								height: 15rem;
+								position: relative;
+
+								.card-description {
+									font-weight: 500;
+									margin-bottom: 0.5rem;
+								}
+
+								.card-assignee, .card-date {
+									color: $gray6;
+									font-weight: 300;
+								}
+
+								.card-assignee {
+									margin-right: 1.5rem;
+								}
+
+								.card-assignee::after {
+									content: "";
+									position: absolute;
+									height: 8px;
+									width: 8px;
+									border-radius: 10px;
+									background-color: $gray5;
+									top: 5.15rem;
+									left: 5.1rem;
+								}
+
+								.card-button {
+									padding: 0.9rem 0;
+									width: 12.488rem;
+									border: 2px solid $purple3;
+									border-radius: 11.25rem;
+									position: absolute;
+									bottom: 2rem;
+									right: 2rem;
+
+									p {
+										color: $purple3;
+										text-align: center;
+									}
+								}
+							}
+						}
+
+						.right-content {
+							position: relative;
+							flex: 0 0 30%;
+
+							p:nth-of-type(1) {
+								margin-bottom: 2.25rem;
+							}
+
+							p:nth-of-type(3) {
+								font-size: 1.125em;
+								position: absolute;
+								bottom: 0;
+
+								a {
+									color: $link-color;
+								}
+							}
+						}
+					}
 				}
 
 				> section:nth-of-type(1) {
@@ -1396,7 +1514,7 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 30em) {
 	.container {
 		padding: 1rem 20px;
 	}
@@ -1446,6 +1564,10 @@ footer {
 
 						.text {
 							margin-left: 0;
+						}
+
+						.white-circle {
+							display: none;
 						}
 					}
 				}

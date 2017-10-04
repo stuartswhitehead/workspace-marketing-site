@@ -828,6 +828,18 @@ main #primary-content article {
     main #primary-content article .secondary-section .container {
       display: flex;
       align-items: flex-start; }
+      main #primary-content article .secondary-section .container .white-circle {
+        flex: 0 0 10rem;
+        background-color: white;
+        border-radius: 25rem;
+        height: 10rem;
+        width: 10rem; }
+        main #primary-content article .secondary-section .container .white-circle img {
+          height: 5.4rem;
+          margin-top: calc(5rem - 43.2px);
+          margin-left: calc(5rem - 32.5px); }
+      main #primary-content article .secondary-section .container > img {
+        flex: 0 0 10rem; }
       main #primary-content article .secondary-section .container .text {
         margin-left: 4.125rem; }
         main #primary-content article .secondary-section .container .text h4, main #primary-content article .secondary-section .container .text p, main #primary-content article .secondary-section .container .text a {
@@ -1329,6 +1341,72 @@ main #primary-content #article-5 .main-section > section {
         text-align: right;
         font-style: italic;
         margin-left: auto; }
+  main #primary-content #article-5 .main-section > section #section-5 {
+    display: flex;
+    justify-content: center; }
+    main #primary-content #article-5 .main-section > section #section-5 p {
+      margin-bottom: 0; }
+    main #primary-content #article-5 .main-section > section #section-5 .left-content {
+      flex: 0 0 33rem;
+      margin-right: 3rem; }
+      main #primary-content #article-5 .main-section > section #section-5 .left-content p, main #primary-content #article-5 .main-section > section #section-5 .left-content span {
+        font-size: 1.575rem;
+        color: #1D3649; }
+      main #primary-content #article-5 .main-section > section #section-5 .left-content .card-titles {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.5rem; }
+        main #primary-content #article-5 .main-section > section #section-5 .left-content .card-titles img {
+          height: 2.025rem;
+          width: 2.025rem;
+          margin-right: 1rem; }
+        main #primary-content #article-5 .main-section > section #section-5 .left-content .card-titles .app-action {
+          font-weight: 500;
+          margin-left: 2rem; }
+      main #primary-content #article-5 .main-section > section #section-5 .left-content .card {
+        padding: 2rem;
+        background-color: white;
+        height: 15rem;
+        position: relative; }
+        main #primary-content #article-5 .main-section > section #section-5 .left-content .card .card-description {
+          font-weight: 500;
+          margin-bottom: 0.5rem; }
+        main #primary-content #article-5 .main-section > section #section-5 .left-content .card .card-assignee, main #primary-content #article-5 .main-section > section #section-5 .left-content .card .card-date {
+          color: #464646;
+          font-weight: 300; }
+        main #primary-content #article-5 .main-section > section #section-5 .left-content .card .card-assignee {
+          margin-right: 1.5rem; }
+        main #primary-content #article-5 .main-section > section #section-5 .left-content .card .card-assignee::after {
+          content: "";
+          position: absolute;
+          height: 8px;
+          width: 8px;
+          border-radius: 10px;
+          background-color: #D0DADA;
+          top: 5.15rem;
+          left: 5.1rem; }
+        main #primary-content #article-5 .main-section > section #section-5 .left-content .card .card-button {
+          padding: 0.9rem 0;
+          width: 12.488rem;
+          border: 2px solid #9855D4;
+          border-radius: 11.25rem;
+          position: absolute;
+          bottom: 2rem;
+          right: 2rem; }
+          main #primary-content #article-5 .main-section > section #section-5 .left-content .card .card-button p {
+            color: #9855D4;
+            text-align: center; }
+    main #primary-content #article-5 .main-section > section #section-5 .right-content {
+      position: relative;
+      flex: 0 0 30%; }
+      main #primary-content #article-5 .main-section > section #section-5 .right-content p:nth-of-type(1) {
+        margin-bottom: 2.25rem; }
+      main #primary-content #article-5 .main-section > section #section-5 .right-content p:nth-of-type(3) {
+        font-size: 1.125em;
+        position: absolute;
+        bottom: 0; }
+        main #primary-content #article-5 .main-section > section #section-5 .right-content p:nth-of-type(3) a {
+          color: #4178be; }
 
 main #primary-content #article-5 .main-section > section:nth-of-type(1) .flex-columns .left-column {
   display: flex;
@@ -1573,7 +1651,7 @@ footer {
   main #primary-content #article-4 .use-case .container .text {
     flex: 0 0 100%; } }
 
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 30em) {
   .container {
     padding: 1rem 20px; }
   nav .container > a {
@@ -1595,6 +1673,8 @@ footer {
       display: none; }
     main #primary-content article .secondary-section .container .text {
       margin-left: 0; }
+    main #primary-content article .secondary-section .container .white-circle {
+      display: none; }
   footer .container ol > a, footer .container ol #appLinks {
     flex: 0 0 100%;
     margin: 0.4rem 0; } }
