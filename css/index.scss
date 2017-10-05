@@ -897,6 +897,10 @@ main {
 					#slash-command {
 						width: 46rem;
 
+						> p {
+							margin-bottom: 1rem;
+						}
+						
 						#ui-slash-command {
 							padding: 1.125rem 1.5rem;
 							border: 1px solid #ECECEC;
@@ -955,7 +959,7 @@ main {
 
 						.left-content {
 							flex: 0 0 33rem;
-							margin-right: 3rem;
+							margin-right: 5rem;
 
 							p, span {
 								font-size: 1.575rem;

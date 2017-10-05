@@ -1312,6 +1312,8 @@ main #primary-content #article-5 .main-section > section {
           top: 2.6rem; }
   main #primary-content #article-5 .main-section > section #slash-command {
     width: 46rem; }
+    main #primary-content #article-5 .main-section > section #slash-command > p {
+      margin-bottom: 1rem; }
     main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command {
       padding: 1.125rem 1.5rem;
       border: 1px solid #ECECEC; }
@@ -1348,7 +1350,7 @@ main #primary-content #article-5 .main-section > section {
       margin-bottom: 0; }
     main #primary-content #article-5 .main-section > section #section-5 .left-content {
       flex: 0 0 33rem;
-      margin-right: 3rem; }
+      margin-right: 5rem; }
       main #primary-content #article-5 .main-section > section #section-5 .left-content p, main #primary-content #article-5 .main-section > section #section-5 .left-content span {
         font-size: 1.575rem;
         color: #1D3649; }
