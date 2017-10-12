@@ -109,3 +109,29 @@ function bodyScroll() {
 	
 }
 window.addEventListener("scroll", bodyScroll);
+
+// Modal use case story
+var closeButton = document.querySelector(".modal-container > svg");
+var useCaseText = document.querySelector("main #article-4 .use-case .example");
+var modal = document.querySelector(".modal-container");
+var overlay = document.querySelector(".modal-overlay");
+function toggleModal() {
+	document.getElementsByTagName("body")[0].classList.toggle("no-scroll");
+
+	if (modal.getAttribute('data-state') === 'closed') {
+		$(".modal").fadeIn(300, function() {
+			modal.setAttribute('data-state', 'open');
+			overlay.setAttribute('data-state', 'open');
+		});
+	}
+
+	else {
+		$(".modal").fadeOut(300, function() {
+			modal.setAttribute('data-state', 'closed');
+			overlay.setAttribute('data-state', 'closed');
+		});
+	}
+}
+useCaseText.addEventListener('click', toggleModal);
+closeButton.addEventListener('click', toggleModal);
+overlay.addEventListener('click', toggleModal);
