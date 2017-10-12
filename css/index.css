@@ -1208,10 +1208,19 @@ main #primary-content #article-4 .use-case .primary.container {
       font-size: 2em;
       font-weight: 500; }
     main #primary-content #article-4 .use-case .primary.container .text .example {
+      display: flex;
+      align-items: center;
       color: #1D3649;
       cursor: pointer;
       font-weight: 500;
-      margin-top: 1rem; }
+      margin-top: 1.5rem; }
+      main #primary-content #article-4 .use-case .primary.container .text .example img {
+        margin-right: 1rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50rem; }
+      main #primary-content #article-4 .use-case .primary.container .text .example p {
+        margin-bottom: 0; }
 
 main #primary-content #article-4 .use-case:nth-child(even) {
   background: #FAFAFA; }
@@ -1491,7 +1500,7 @@ footer {
       margin-left: 0; }
   main #primary-content article .faq .question h3 {
     font-size: 1.2em; }
-  main #primary-content #article-4 .use-case .primary.container img {
+  main #primary-content #article-4 .use-case .primary.container > img {
     display: none; }
   main #primary-content #article-4 .use-case .primary.container .text {
     flex: 0 0 100%; } }

@@ -729,10 +729,23 @@ main {
 						}
 
 						.example {
+							display: flex;
+							align-items: center;
 							color: $navy1;
 							cursor: pointer;
 							font-weight: 500;
-							margin-top: 1rem;
+							margin-top: 1.5rem;
+
+							img {
+								margin-right: 1rem;
+								width: 3rem;
+								height: 3rem;
+								border-radius: 50rem;
+							}
+
+							p {
+								margin-bottom: 0;
+							}
 						}
 					}
 				}
@@ -1224,7 +1237,7 @@ footer {
 			#article-4 {
 				.use-case {
 					.primary.container {
-						img {
+						> img {
 							display: none;
 						}
 
