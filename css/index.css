@@ -1279,7 +1279,8 @@ main #primary-content #article-5 .main-section > section {
         margin-top: 1.3rem;
         font-size: 1.8em;
         font-weight: 300;
-        color: #152935; }
+        color: #152935;
+        line-height: 1.8rem; }
         main #primary-content #article-5 .main-section > section #message .text .bottom-text .action {
           text-decoration: underline;
           text-decoration-color: #8B5BDC; }
@@ -1686,6 +1687,37 @@ footer {
     margin-bottom: 2rem; }
   main #primary-content #article-4 .use-case .primary.container img {
     height: 16rem; }
+  main #primary-content #article-5 .main-section > section h4 {
+    margin-bottom: 3rem;
+    text-align: left; }
+  main #primary-content #article-5 .main-section > section h5 {
+    margin-bottom: 1rem; }
+  main #primary-content #article-5 .main-section > section .flex-columns {
+    flex-wrap: wrap; }
+    main #primary-content #article-5 .main-section > section .flex-columns .left-column, main #primary-content #article-5 .main-section > section .flex-columns > p {
+      flex: 0 0 100%; }
+  main #primary-content #article-5 .main-section > section #menu-actions {
+    justify-content: flex-start; }
+  main #primary-content #article-5 .main-section > section #slash-command {
+    width: 44rem; }
+    main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #top-row #line {
+      width: 33.55rem; }
+  main #primary-content #article-5 .main-section > section #section-5 {
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    main #primary-content #article-5 .main-section > section #section-5 .left-content {
+      margin: 0 0 2rem; }
+    main #primary-content #article-5 .main-section > section #section-5 .right-content {
+      display: flex;
+      flex: 0 0 100%;
+      justify-content: space-between; }
+      main #primary-content #article-5 .main-section > section #section-5 .right-content > p {
+        flex: 0 0 45%; }
+      main #primary-content #article-5 .main-section > section #section-5 .right-content p:nth-of-type(1) {
+        margin-bottom: 4rem; }
+  main #primary-content #article-5 .main-section > section:nth-of-type(1) .flex-columns .left-column {
+    justify-content: flex-start;
+    margin-bottom: 2rem; }
   footer .container ol > a, footer .container ol #appLinks {
     flex: 0 0 45%;
     margin: 0.4rem 0; } }

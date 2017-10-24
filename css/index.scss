@@ -839,6 +839,7 @@ main {
 								font-size: 1.8em;
 								font-weight: 300;
 								color: $navy2;
+								line-height: 1.8rem;
 
 								.action {
 									text-decoration: underline;
@@ -1480,6 +1481,77 @@ footer {
 					.primary.container {
 						img {
 							height: 16rem;
+						}
+					}
+				}
+			}
+
+			#article-5 {
+				.main-section {
+					> section {
+						h4 {
+							margin-bottom: 3rem;
+							text-align: left;
+						}
+
+						h5 {
+							margin-bottom: 1rem;
+						}
+
+						.flex-columns {
+							flex-wrap: wrap;
+
+							.left-column, > p {
+								flex: 0 0 100%;
+							}
+						}
+
+						#menu-actions {
+							justify-content: flex-start;
+						}
+
+						#slash-command {
+							width: 44rem;
+
+							#ui-slash-command {
+								#top-row {
+									#line {
+										width: 33.55rem;
+									}
+								}
+							}
+						}
+
+						#section-5 {
+							flex-wrap: wrap;
+							justify-content: flex-start;
+
+							.left-content {
+								margin: 0 0 2rem;
+							}
+
+							.right-content {
+								display: flex;
+								flex: 0 0 100%;
+								justify-content: space-between;
+
+								> p {
+									flex: 0 0 45%;
+								}
+
+								p:nth-of-type(1) {
+									margin-bottom: 4rem;
+								}
+							}
+						}
+					}
+
+					> section:nth-of-type(1) {
+						.flex-columns {
+							.left-column {
+								justify-content: flex-start;
+								margin-bottom: 2rem;
+							}
 						}
 					}
 				}
