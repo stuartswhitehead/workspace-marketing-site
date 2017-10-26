@@ -260,25 +260,82 @@ main {
 			ol {
 				display: flex;
 
-				li {
+				.tab-value {
 					padding-bottom: 1rem;
 					border-bottom: 3px solid transparent;
 					margin-right: 2em;
-					@include transition(border-bottom-color .2s ease-out);
+					@include transition(border-bottom-color .2s ease-out, color .2s ease-out);
 					cursor: pointer;
 					color: $gray1;
 					font-size: 1.125em;
 				}
 
-				li:hover {
+				.tab-value:hover {
 					color: white;
 					border-bottom: 6px solid white;
 				}
 
-				li[data-state="active"] {
+				.tab-value[data-state="active"] {
 					color: white;
 					border-bottom: 6px solid white;
 					font-weight: 600;
+				}
+
+				#overflow-menu {
+					margin-left: auto;
+					display: none;
+
+					#overflow-button {
+						cursor: pointer;
+						height: 100%;
+
+						svg {
+							height: .5rem;
+							width: 3rem;
+							fill: $gray1;
+							@include transition(fill .2s ease-out);
+						}
+					}
+
+					ol {
+						height: 0;
+						width: 9rem;
+						flex-wrap: wrap;
+						position: absolute;
+						overflow: hidden;
+						right: 0;
+						top: 3.8rem;
+						background: $navy1;
+						border-radius: 0 0 0 0.5rem;
+						@include transition(height .3s ease-in-out);
+
+						li {
+							cursor: pointer;
+							flex: 0 0 100%;
+							color: $gray1;
+							padding: 0.2rem 1rem;
+							background: $navy1;
+							text-align: right;
+							@include transition(color .2s ease-out);
+						}
+						li:hover {
+							color: white;
+						}
+						li[data-state="active"] {
+							display: none;
+						}
+					}
+					ol[data-state="open"] {
+						height: auto;
+						padding-bottom: 0.4rem;
+					}
+				}
+				#overflow-menu:hover {
+					#overflow-button {
+						svg {
+							fill: white;
+						}
+					}
 				}
 			}
 		}
@@ -1613,6 +1670,22 @@ footer {
 			}
 		}
 
+		.tabs {
+			.container {
+
+				ol {
+
+					.tab-value[data-state="inactive"] {
+						display: none;
+					}
+
+					#overflow-menu {
+						display: block;
+					}
+				}
+			}
+		}
+
 		#primary-content {
 			article {
 				#article-1-section-2 {
@@ -1705,7 +1778,7 @@ footer {
 		.tabs {
 			.container {
 				ol {
-					li {
+					.tab-value {
 						margin-right: 1.5em;
 						font-size: 0.93em;
 					}

@@ -124,11 +124,23 @@
                 <section class="tabs">
                     <div class="container">
                         <ol>
-                            <li id="tab-1" data-state="active">Overview</li>
-                            <li id="tab-2" data-state="inactive">Features</li>
-                            <li id="tab-3" data-state="inactive">FAQ</li>
-                            <li id="tab-4" data-state="inactive">Use Cases</li>
-                            <li id="tab-5" data-state="inactive">Developers</li>
+                            <li id="tab-1" class="tab-value" data-state="active">Overview</li>
+                            <li id="tab-2" class="tab-value" data-state="inactive">Features</li>
+                            <li id="tab-3" class="tab-value" data-state="inactive">FAQ</li>
+                            <li id="tab-4" class="tab-value" data-state="inactive">Use Cases</li>
+                            <li id="tab-5" class="tab-value" data-state="inactive">Developers</li>
+                            <li id="overflow-menu">
+                                <div id="overflow-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 4"><g><g><circle cx="2" cy="2" r="2"></circle></g><g><circle cx="10" cy="2" r="2"></circle></g><g><circle cx="18" cy="2" r="2"></circle></g></g></svg>
+                                </div>
+                                <ol data-state="closed">
+                                    <li id="overflow-1" data-state="active">Overview</li>
+                                    <li id="overflow-2" data-state="inactive">Features</li>
+                                    <li id="overflow-3" data-state="inactive">FAQ</li>
+                                    <li id="overflow-4" data-state="inactive">Use Cases</li>
+                                    <li id="overflow-5" data-state="inactive">Developers</li>
+                                </ol>
+                            </li>
                         </ol>
                     </div>
                 </section>
