@@ -721,7 +721,7 @@
                                         Build with Watson — create your own apps and integrations
                                     </h3>
                                     <p class="description">
-                                        Use our cognitive APIs to build apps and integrations that can analyze sentiment, detect language, and connect users’ words to possible actions. You can create bots and apps to analyze the conversation in Workspace, or to integrate other tools with Workspace.
+                                        With Watson Work Services, you can develop apps to integrate your favorite tools and capabilities into Workspace. Better yet - you can use our cognitive APIs to develop apps that understand conversations, recognize intent, and connect users’ words to actions.
                                     </p>
                                 </div>
                             </div>
@@ -731,11 +731,11 @@
                                     <h4>Our technology in action</h4>
                                     <div class="flex-columns">
                                         <div class="left-column">
-                                            <img src="./images/developers-tab/todoit_icon.svg" />
-                                            <p>ToDo It</p>
+                                            <img src="./images/developers-tab/news_icon.jpg" />
+                                            <p>News</p>
                                         </div>
                                         <p>
-                                            "ToDo It" lets users manage to dos without leaving Watson Workspace. The app lets users create, edit, view, or assign to dos from Workspace, using slash commands or per-message actions. The app can detect potential actions in the conversation and suggest them as to-dos, using our cognitive conversation APIs. This can be a native app in Workspace or can push and pull information from the user's preferred to-do app, such as Wunderlist or Todoist.
+                                            Let’s walk through an example: "News" delivers the latest headlines on demand. Users can either request the latest news from different vendors using slash commands, or they can ask for the news in the conversation where the app, using our cognitive conversation APIs, automatically recognizes this so the user can easily take an action.
                                         </p>
                                     </div>
                                 </div>
@@ -743,15 +743,15 @@
 
                             <section>
                                 <div class="container">
-                                    <h5>How the APIs are used</h5>
+                                    <h5>How it works</h5>
                                     <div class="flex-columns">
                                         <div class="left-column">
                                             <p>
-                                                {API link} and {API link} let the app privately prompt users to interact, so users can take actions without leaving the conversation or having their private actions visible to others.
+                                                Using <a target="_blank" href="https://developer.watsonwork.ibm.com/docs/tutorials/action-fulfillment">Action Fulfillment and Watson Conversation</a>, the app displays the recent news articles as rich cards in a private dialog for users to browse. Users can take suggested actions, such as "share this article", without context-switching. 
                                             </p>
                                         </div>
                                         <p>
-                                            {API link} listens to events and annotations to detect potential actions in the conversation. {API} pulls in metadata to see if the user is mentioned (to increase confidence that it's relevant to the user) or to detect if this is an assignment to another user.
+                                            ?
                                         </p>
                                     </div>
                                 </div>
@@ -779,7 +779,7 @@
                                     <div id="menu-actions">
                                         <div id="menu-actions-text">
                                             <p>
-                                                {API link} adds options to the per-message dropdown list/adds more actions you can take on a message 
+                                                By registering an <a target="_blank" href="https://developer.watsonwork.ibm.com/docs/tutorials/slash-commands">action command</a>, users can interact with the app via slash command, as well as take actions from the per-message dropdown list. 
                                             </p>
                                         </div>
                                         <div id="menu-actions-img">
@@ -790,8 +790,8 @@
                                                     <p class="app-action">Train Watson</p>
                                                 </div>
                                                 <div class="message-action selected">
-                                                    <p class="app-title">ToDo Work</p>
-                                                    <p class="app-action">Create ToDo It</p>
+                                                    <p class="app-title">News</p>
+                                                    <p class="app-action">Get the News</p>
                                                 </div>
                                                 <div class="message-action">
                                                     <p class="app-title">WebEx</p>
@@ -807,18 +807,18 @@
                                         </p>
                                         <div id="ui-slash-command" class="ui">
                                             <div id="top-row">
-                                                <p>ToDo Work</p>
+                                                <p>News</p>
                                                 <div id="line"></div>
                                             </div>
                                             <div id="bottom-row">
                                                 <p class="command">
-                                                    /todoit
+                                                    /news
                                                 </p>
                                                 <p class="args">
-                                                    [title]
+                                                    source or help
                                                 </p>
                                                 <p class="help-text">
-                                                    Create a new ToDo
+                                                    Get the latest news stories
                                                 </p>
                                             </div>
                                         </div>
@@ -831,35 +831,35 @@
                                     <div id="section-5">
                                         <div class="left-content">
                                             <div class="card-titles">
-                                                <img src="./images/developers-tab/todoit_icon.svg" />
-                                                <p class="app-name">ToDo It</p>
-                                                <p class="app-action">Create ToDo</p>
+                                                <img src="./images/developers-tab/news_icon.jpg" />
+                                                <p class="app-name">News</p>
+                                                <p class="app-action">Get the News</p>
                                             </div>
                                             <div class="card ui">
                                                 <p class="card-description">
-                                                    Send presentation review to Jacqueline
+                                                    2017 to be in top three warmest years
                                                 </p>
                                                 <span class="card-assignee">
-                                                    You
+                                                    BBC News
                                                 </span>
                                                 <span class="card-date">
-                                                    Due tomorrow
+                                                    7 hours ago
                                                 </span>
+                                                <p class="card-data">
+                                                    Scientists say that 2017 shows a continuing trend of high temperatures and extreme weather events.
+                                                </p>
 
                                                 <div class="card-button">
-                                                    <p>Create ToDo</p>
+                                                    <p>Share With Space</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="right-content">
                                             <p>
-                                                {API link} pulls in metadata, so you can pre-populate a to do with content from the conversation or the metadata
+                                                Using createTargetedMessage, each News Article is rendered as a rich card in the private dialog. Users can take actions or share the articles into the conversation. 
                                             </p>
                                             <p>
-                                                {API link} can show a to do as a card as it's being created, so the user can see pre-populated data and edit if necessary before creating.
-                                            </p>
-                                            <p>
-                                                <a target="_blank" href="">Starting building</a> | <a target="_blank" href="">Learn more</a>
+                                                <a target="_blank" href="https://github.ibm.com/bhumitpatel/news-app">Check out the News app</a> | <a target="_blank" href="https://developer.watsonwork.ibm.com/docs">Start building</a>
                                             </p>
                                         </div>
                                     </div>

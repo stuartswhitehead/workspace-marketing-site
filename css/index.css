@@ -1306,6 +1306,10 @@ main #primary-content #article-5 .main-section > section {
     justify-content: space-between; }
     main #primary-content #article-5 .main-section > section .flex-columns > p, main #primary-content #article-5 .main-section > section .flex-columns .left-column {
       flex: 0 0 46%; }
+      main #primary-content #article-5 .main-section > section .flex-columns > p > img, main #primary-content #article-5 .main-section > section .flex-columns .left-column > img {
+        height: 5.5rem;
+        width: 5.5rem;
+        border-radius: 1rem; }
   main #primary-content #article-5 .main-section > section #message {
     display: flex;
     align-items: center;
@@ -1328,7 +1332,7 @@ main #primary-content #article-5 .main-section > section {
         font-size: 1.8em;
         font-weight: 300;
         color: #152935;
-        line-height: 1.8rem; }
+        line-height: 1.9rem; }
         main #primary-content #article-5 .main-section > section #message .text .bottom-text .action {
           text-decoration: underline;
           text-decoration-color: #8B5BDC; }
@@ -1418,7 +1422,7 @@ main #primary-content #article-5 .main-section > section {
       flex: 0 0 33rem;
       margin-right: 5rem; }
       main #primary-content #article-5 .main-section > section #section-5 .left-content p, main #primary-content #article-5 .main-section > section #section-5 .left-content span {
-        font-size: 1.575rem;
+        font-size: 1.575em;
         color: #1D3649; }
       main #primary-content #article-5 .main-section > section #section-5 .left-content .card-titles {
         display: flex;
@@ -1427,15 +1431,16 @@ main #primary-content #article-5 .main-section > section {
         main #primary-content #article-5 .main-section > section #section-5 .left-content .card-titles img {
           height: 2.025rem;
           width: 2.025rem;
-          margin-right: 1rem; }
+          margin-right: 1rem;
+          border-radius: 0.5rem; }
         main #primary-content #article-5 .main-section > section #section-5 .left-content .card-titles .app-action {
           font-weight: 500;
-          margin-left: 2rem; }
+          margin-left: 1rem; }
       main #primary-content #article-5 .main-section > section #section-5 .left-content .card {
         padding: 2rem;
         background-color: white;
-        height: 15rem;
-        position: relative; }
+        position: relative;
+        font-size: 0.9em; }
         main #primary-content #article-5 .main-section > section #section-5 .left-content .card .card-description {
           font-weight: 500;
           margin-bottom: 0.5rem; }
@@ -1451,29 +1456,28 @@ main #primary-content #article-5 .main-section > section {
           width: 8px;
           border-radius: 10px;
           background-color: #D0DADA;
-          top: 5.15rem;
-          left: 5.1rem; }
+          top: 5.1rem;
+          left: 9.25rem; }
+        main #primary-content #article-5 .main-section > section #section-5 .left-content .card .card-data {
+          color: #777677;
+          margin: 1.5rem 0 3rem;
+          line-height: 1.8rem; }
         main #primary-content #article-5 .main-section > section #section-5 .left-content .card .card-button {
           padding: 0.9rem 0;
-          width: 12.488rem;
+          width: 14rem;
           border: 2px solid #9855D4;
-          border-radius: 11.25rem;
-          position: absolute;
-          bottom: 2rem;
-          right: 2rem; }
+          border-radius: 11.25rem; }
           main #primary-content #article-5 .main-section > section #section-5 .left-content .card .card-button p {
             color: #9855D4;
             text-align: center; }
     main #primary-content #article-5 .main-section > section #section-5 .right-content {
       position: relative;
       flex: 0 0 30%; }
-      main #primary-content #article-5 .main-section > section #section-5 .right-content p:nth-of-type(1) {
-        margin-bottom: 2.25rem; }
-      main #primary-content #article-5 .main-section > section #section-5 .right-content p:nth-of-type(3) {
+      main #primary-content #article-5 .main-section > section #section-5 .right-content p:nth-of-type(2) {
         font-size: 1.125em;
         position: absolute;
         bottom: 0; }
-        main #primary-content #article-5 .main-section > section #section-5 .right-content p:nth-of-type(3) a {
+        main #primary-content #article-5 .main-section > section #section-5 .right-content p:nth-of-type(2) a {
           color: #4178be; }
 
 main #primary-content #article-5 .main-section > section:nth-of-type(1) .flex-columns .left-column {
@@ -1809,7 +1813,31 @@ footer {
   main #primary-content #article-4 .use-case .primary.container > img {
     display: none; }
   main #primary-content #article-4 .use-case .primary.container .text {
-    flex: 0 0 100%; } }
+    flex: 0 0 100%; }
+  main #primary-content #article-5 .main-section > section #menu-actions {
+    justify-content: flex-start;
+    flex-wrap: wrap; }
+    main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-text {
+      flex: 0 0 100%;
+      margin-bottom: 2rem;
+      margin-right: 0;
+      margin-top: 0; }
+    main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img {
+      margin-left: auto; }
+  main #primary-content #article-5 .main-section > section #slash-command {
+    width: 23rem; }
+    main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command {
+      font-size: 0.9em; }
+  main #primary-content #article-5 .main-section > section #section-5 {
+    flex-wrap: wrap; }
+    main #primary-content #article-5 .main-section > section #section-5 .left-content {
+      flex: 0 0 23rem;
+      font-size: 0.95em; }
+      main #primary-content #article-5 .main-section > section #section-5 .left-content .card .card-assignee:after {
+        left: 8.55rem;
+        top: 6.3rem; }
+    main #primary-content #article-5 .main-section > section #section-5 .right-content > p {
+      flex: 0 0 100%; } }
 
 @media only screen and (max-width: 30em) {
   .container {
@@ -1824,8 +1852,7 @@ footer {
   .button-container .button-large:hover {
     padding: 12px 19px; }
   main .tabs .container ol .tab-value {
-    margin-right: 1.5em;
-    font-size: 0.93em; }
+    margin-right: 1.5em; }
   main #primary-content article .secondary-section {
     padding: 4.2rem 0;
     color: white; }
