@@ -124,10 +124,23 @@
                 <section class="tabs">
                     <div class="container">
                         <ol>
-                            <li id="tab-1" data-state="active">Overview</li>
-                            <li id="tab-2" data-state="inactive">Features</li>
-                            <li id="tab-3" data-state="inactive">FAQ</li>
-                            <li id="tab-4" data-state="inactive">Use Cases</li>
+                            <li id="tab-1" class="tab-value" data-state="active">Overview</li>
+                            <li id="tab-2" class="tab-value" data-state="inactive">Features</li>
+                            <li id="tab-3" class="tab-value" data-state="inactive">FAQ</li>
+                            <li id="tab-4" class="tab-value" data-state="inactive">Use Cases</li>
+                            <li id="tab-5" class="tab-value" data-state="inactive">Developers</li>
+                            <li id="overflow-menu">
+                                <div id="overflow-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 4"><g><g><circle cx="2" cy="2" r="2"></circle></g><g><circle cx="10" cy="2" r="2"></circle></g><g><circle cx="18" cy="2" r="2"></circle></g></g></svg>
+                                </div>
+                                <ol data-state="closed">
+                                    <li id="overflow-1" data-state="active">Overview</li>
+                                    <li id="overflow-2" data-state="inactive">Features</li>
+                                    <li id="overflow-3" data-state="inactive">FAQ</li>
+                                    <li id="overflow-4" data-state="inactive">Use Cases</li>
+                                    <li id="overflow-5" data-state="inactive">Developers</li>
+                                </ol>
+                            </li>
                         </ol>
                     </div>
                 </section>
@@ -692,6 +705,175 @@
                                     <h4>Calling all developers</h4>
                                     <p>Want to customize your spaces with your favorite tools? Build apps to connect your tools to Watson Workspace.</p>
                                     <a class="button" target="_blank" href="https://developer.watsonwork.ibm.com/">Develop Apps</a>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+
+                    <article id="article-5" data-state="inactive">
+                        <section class="main-section">
+                            <div class="container">
+                                <div class="header">
+                                    <h3 class="title">
+                                        Build with Watson —<br/> create your own apps<br/> and integrations
+                                    </h3>
+                                    <h3 class="title title-no-break">
+                                        Build with Watson — create your own apps and integrations
+                                    </h3>
+                                    <p class="description">
+                                        With Watson Work Services, you can develop apps to integrate your favorite tools and capabilities into Workspace. Better yet - you can use our cognitive APIs to develop apps that understand conversations, recognize intent, and connect users’ words to actions.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <section>
+                                <div class="container">
+                                    <h4>Our technology in action</h4>
+                                    <div class="flex-columns">
+                                        <div class="left-column">
+                                            <img src="./images/developers-tab/news_icon.jpg" />
+                                            <p>News</p>
+                                        </div>
+                                        <p>
+                                            Let’s walk through an example: "News" delivers the latest headlines on demand. Users can either request the latest news from different vendors using slash commands, or they can ask for the news in the conversation where the app, using our cognitive conversation APIs, automatically recognizes this so the user can easily take an action.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="container">
+                                    <h5>How it works</h5>
+                                    <div class="flex-columns">
+                                        <div class="left-column">
+                                            <p>
+                                                Using <a target="_blank" href="https://developer.watsonwork.ibm.com/docs/tutorials/action-fulfillment">Action Fulfillment and Watson Conversation</a>, the app displays the recent news articles as rich cards in a private dialog for users to browse. Users can take suggested actions, such as "share this article", without context-switching. 
+                                            </p>
+                                        </div>
+                                        <div id="message">
+                                            <img src="./images/developers-tab/avatar.png" />
+                                            <div class="text">
+                                                <p class="top-text">
+                                                    Jacqueline Scott
+                                                    <span class="time">7:34 AM</span>
+                                                </p>
+                                                <p class="bottom-text">
+                                                    That sounds great. <span class="action">Has anyone seen the latest news from BBC?</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="container">
+                                    <div id="menu-actions">
+                                        <div id="menu-actions-text">
+                                            <p>
+                                                By registering an <a target="_blank" href="https://developer.watsonwork.ibm.com/docs/tutorials/slash-commands">action command</a>, users can interact with the app via slash command, as well as take actions from the per-message dropdown list. 
+                                            </p>
+                                        </div>
+                                        <div id="menu-actions-img">
+                                            <img src="./images/developers-tab/menu_actions.svg" />
+                                            <div id="ui-dropdown" class="ui">
+                                                <div class="message-action">
+                                                    <p class="app-title">Watson Workspace</p>
+                                                    <p class="app-action">Train Watson</p>
+                                                </div>
+                                                <div class="message-action selected">
+                                                    <p class="app-title">News</p>
+                                                    <p class="app-action">Get the News</p>
+                                                </div>
+                                                <div class="message-action">
+                                                    <p class="app-title">WebEx</p>
+                                                    <p class="app-action">Start Meeting</p>
+                                                </div>
+                                                <img src="./images/developers-tab/cursor.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="slash-command">
+                                        <p>
+                                            Slash commands enable users to privately interact with apps
+                                        </p>
+                                        <div id="ui-slash-command" class="ui">
+                                            <div id="top-row">
+                                                <p>News</p>
+                                                <div id="line"></div>
+                                            </div>
+                                            <div id="bottom-row">
+                                                <p class="command">
+                                                    /news
+                                                </p>
+                                                <p class="args">
+                                                    source or help
+                                                </p>
+                                                <p class="help-text">
+                                                    Get the latest news stories
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section>
+                                <div class="container">
+                                    <div id="section-4">
+                                        <div class="left-content">
+                                            <div class="card-titles">
+                                                <img src="./images/developers-tab/news_icon.jpg" />
+                                                <p class="app-name">News</p>
+                                                <p class="app-action">Get the News</p>
+                                            </div>
+                                            <div class="card ui">
+                                                <p class="card-description">
+                                                    2017 to be in top three warmest years
+                                                </p>
+                                                <span class="card-assignee">
+                                                    BBC News
+                                                </span>
+                                                <span class="card-date">
+                                                    7 hours ago
+                                                </span>
+                                                <p class="card-data">
+                                                    Scientists say that 2017 shows a continuing trend of high temperatures and extreme weather events.
+                                                </p>
+
+                                                <div class="card-button">
+                                                    <p>Share With Space</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-content">
+                                            <p>
+                                                Each news article is rendered as a rich card in the private dialog. Users can take actions or share the articles into the conversation. 
+                                            </p>
+                                            <p>
+                                                <a target="_blank" href="https://github.ibm.com/bhumitpatel/news-app">Check out the News app</a> | <a target="_blank" href="https://developer.watsonwork.ibm.com">Start building</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="container">
+                                <div class="button-container">
+                                    <a class="button-large" target="_blank" href="https://workspace.ibm.com">Try Watson Workspace</a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="secondary-section">
+                            <div class="container">
+                                <div class="white-circle">
+                                    <img src="./images/subpages_opt/rocket.svg" />
+                                </div>
+                                <div class="text">
+                                    <h4>See what’s new</h4>
+                                    <p>Curious about the latest updates to Watson Workspace? Visit our blog to stay up-to-date on our newest features. </p>
+                                    <a class="button" target="_blank" href="https://help.workspace.ibm.com/hc/articles/230056668-News-Updates-">Visit our blog</a>
                                 </div>
                             </div>
                         </section>
