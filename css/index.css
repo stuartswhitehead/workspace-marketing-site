@@ -1710,6 +1710,8 @@ footer {
   main #banner .container h1 {
     font-size: 2.48832em;
     line-height: 1.20563; }
+  main #primary-content .button-container {
+    margin-top: 3rem; }
   main #primary-content article .header {
     flex-wrap: wrap; }
     main #primary-content article .header .title {
@@ -1773,11 +1775,9 @@ footer {
     main #primary-content #article-5 .main-section > section #section-4 .right-content {
       display: flex;
       flex: 0 0 100%;
-      justify-content: space-between; }
+      flex-wrap: wrap; }
       main #primary-content #article-5 .main-section > section #section-4 .right-content > p {
-        flex: 0 0 45%; }
-      main #primary-content #article-5 .main-section > section #section-4 .right-content p:nth-of-type(1) {
-        margin-bottom: 4rem; }
+        flex: 0 0 65%; }
   main #primary-content #article-5 .main-section > section:nth-of-type(1) .flex-columns .left-column {
     justify-content: flex-start;
     margin-bottom: 2rem; }
