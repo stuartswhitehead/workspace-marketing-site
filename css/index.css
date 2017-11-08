@@ -866,11 +866,20 @@ main #primary-content article {
       line-height: 3.75rem; }
     main #primary-content article .header .title-no-break {
       display: none; }
-    main #primary-content article .header .description {
+    main #primary-content article .header p.description {
       padding-top: 1rem;
       flex: 0 0 45%;
       font-size: 1.25em;
       line-height: 2rem; }
+    main #primary-content article .header div.description {
+      padding-top: 1rem;
+      flex: 0 0 45%;
+      font-size: 1.25em; }
+      main #primary-content article .header div.description > p {
+        line-height: 2rem;
+        margin-bottom: 1rem; }
+      main #primary-content article .header div.description > a {
+        color: #4178be; }
   main #primary-content article .main-section {
     padding: 4.625rem 0 5.5rem; }
   main #primary-content article .secondary-section {
@@ -1475,10 +1484,10 @@ main #primary-content #article-5 .main-section > section {
     main #primary-content #article-5 .main-section > section #section-4 .right-content {
       position: relative;
       flex: 0 0 30%; }
+      main #primary-content #article-5 .main-section > section #section-4 .right-content p:first-of-type {
+        margin-bottom: 1rem; }
       main #primary-content #article-5 .main-section > section #section-4 .right-content p:nth-of-type(2) {
-        font-size: 1.125em;
-        position: absolute;
-        bottom: 0; }
+        font-size: 1.125em; }
         main #primary-content #article-5 .main-section > section #section-4 .right-content p:nth-of-type(2) a {
           color: #4178be; }
 
@@ -1706,7 +1715,7 @@ footer {
     main #primary-content article .header .title {
       flex: 0 0 100%;
       margin-bottom: 2rem; }
-    main #primary-content article .header .description {
+    main #primary-content article .header div.description, main #primary-content article .header p.description {
       flex: 0 0 100%; }
   main #primary-content article #article-1-section-2 .overview-img-and-text {
     margin-bottom: 11.75rem; }

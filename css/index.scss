@@ -424,11 +424,26 @@ main {
 					display: none;
 				}
 
-				.description {
+				p.description {
 					padding-top: 1rem;
 					flex: 0 0 45%;
 					font-size: 1.25em;
 					line-height: 2rem;
+				}
+
+				div.description {
+					padding-top: 1rem;
+					flex: 0 0 45%;
+					font-size: 1.25em;
+
+					> p {
+						line-height: 2rem;
+						margin-bottom: 1rem;
+					}
+
+					> a {
+						color: $link-color;
+					}
 				}
 			}
 
@@ -1130,10 +1145,12 @@ main {
 							position: relative;
 							flex: 0 0 30%;
 
+							p:first-of-type {
+								margin-bottom: 1rem;
+							}
+
 							p:nth-of-type(2) {
 								font-size: 1.125em;
-								position: absolute;
-								bottom: 0;
 
 								a {
 									color: $link-color;
@@ -1466,7 +1483,7 @@ footer {
 						margin-bottom: 2rem;
 					}
 
-					.description {
+					div.description, p.description {
 						flex: 0 0 100%;
 					}
 				}
