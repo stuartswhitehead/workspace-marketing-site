@@ -1187,6 +1187,36 @@ main {
 				}
 			}
 
+			#dev-case-container {
+				background: $navy1;
+				padding: 5rem 0;
+
+				#dev-case-content {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					img {
+						height: 23.375rem;
+						border-radius: 100rem;
+					}
+
+					div {
+						flex: 0 0 61%;
+						line-height: 2.5rem;
+						color: white;
+
+						> * {
+							color: white;
+						}
+
+						p {
+							margin-bottom: 2.5rem;
+						}
+					}
+				}
+			}
+
 			.secondary-section {
 				background: $pink1;
 			}
@@ -1378,6 +1408,16 @@ footer {
 									width: 81%;
 								}
 							}
+						}
+					}
+				}
+			}
+
+			#article-5 {
+				#dev-case-container {
+					#dev-case-content {
+						div {
+							flex: 0 0 50%;
 						}
 					}
 				}
@@ -1635,6 +1675,18 @@ footer {
 								justify-content: flex-start;
 								margin-bottom: 2rem;
 							}
+						}
+					}
+				}
+
+				#dev-case-container {
+					#dev-case-content {
+						img {
+							display: none;
+						}
+
+						div {
+							flex: 0 0 100%;
 						}
 					}
 				}
