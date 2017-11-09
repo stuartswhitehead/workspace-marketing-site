@@ -6,31 +6,42 @@ function toggleOverflowTabMenu() {
 }
 overflowButton.addEventListener("click", toggleOverflowTabMenu);
 
-// Clicking tabs for different articles
-var tabLinks = document.querySelectorAll('.tabs .tab-value');
-function tabClick(e) {
+// Switch tabs, hide/show the appropriate content, select the corresponding tabs
+function showTab(tabName) {
 	// Switch active tab
-	e = e || window.event;
 	var oldActiveTab = document.querySelector('.tabs .tab-value[data-state="active"]');
 	oldActiveTab.setAttribute('data-state', 'inactive');
-	var target = e.target || e.srcElement;
-	target.setAttribute('data-state', 'active');
+	var newTab = document.querySelector('#' + tabName);
+	newTab.setAttribute('data-state', 'active');
 
 	// Switch active overflow tab
 	var oldActiveOverflowTab = document.querySelector('.tabs #overflow-menu ol li[data-state="active"]');
-	var newActiveOverflowTab = document.querySelector("#overflow" + target.id.substring(3));
 	oldActiveOverflowTab.setAttribute('data-state', 'inactive');
+	var newActiveOverflowTab = document.querySelector("#overflow-" + tabName);
 	newActiveOverflowTab.setAttribute('data-state', 'active');
 
 	// Show/hide corresponding content (article)
-	var oldArticle = document.querySelector("#article" + oldActiveTab.id.substring(3));
-	var newArticle = document.querySelector("#article" + target.id.substring(3));
+	var oldArticle = document.querySelector("#article-" + oldActiveTab.id);
 	oldArticle.setAttribute('data-state', 'inactive');
+	var newArticle = document.querySelector("#article-" + tabName);
 	newArticle.setAttribute('data-state', 'active');
 
 	// Animate scroll to top of tabs
 	var tabMarker = $('#tab-marker').offset().top;
 	$("html, body").animate({ scrollTop: tabMarker }, 200);
+
+	// Update URL
+	if (window.history && history.pushState) {
+		history.replaceState("", "", "?tab=" + tabName);
+	}
+}
+
+// Clicking tabs for different articles
+var tabLinks = document.querySelectorAll('.tabs .tab-value');
+function tabClick(e) {
+	e = e || window.event;
+	var target = e.target || e.srcElement;
+	showTab(target.id);
 }
 for (var i = 0; i < tabLinks.length; i++) {
 	tabLinks[i].addEventListener("click", tabClick);
@@ -41,26 +52,8 @@ var overflowTabLinks = document.querySelectorAll('.tabs #overflow-menu ol li');
 function overflowTabClick(e) {
 	// Switch active overflow tab
 	e = e || window.event;
-	var oldActiveOverflowTab = document.querySelector('.tabs #overflow-menu ol li[data-state="active"]');
-	oldActiveOverflowTab.setAttribute('data-state', 'inactive');
 	var target = e.target || e.srcElement;
-	target.setAttribute('data-state', 'active');
-
-	// Switch active regular tab
-	var oldActiveTab = document.querySelector('.tabs .tab-value[data-state="active"]');
-	var newActiveTab = document.querySelector("#tab" + target.id.substring(8));
-	oldActiveTab.setAttribute('data-state', 'inactive');
-	newActiveTab.setAttribute('data-state', 'active');
-
-	// Show/hide corresponding content (article)
-	var oldArticle = document.querySelector("#article" + oldActiveTab.id.substring(3));
-	var newArticle = document.querySelector("#article" + target.id.substring(8));
-	oldArticle.setAttribute('data-state', 'inactive');
-	newArticle.setAttribute('data-state', 'active');
-
-	// Animate scroll to top of tabs
-	var tabMarker = $('#tab-marker').offset().top;
-	$("html, body").animate({ scrollTop: tabMarker }, 200);
+	showTab(target.id.substring(9));
 
 	// Close menu
 	toggleOverflowTabMenu();
@@ -79,7 +72,7 @@ for (var i = 0; i < overflowTabLinks.length; i++) {
 // navDropdownButton.addEventListener("click", dropdownClick);
 
 // Click to expand FAQ questions to show answer
-var faqs = document.querySelectorAll('main #article-3 .faq .question');
+var faqs = document.querySelectorAll('main #article-faq .faq .question');
 function faqClick(e) {
 	e = e || window.event;
 	var target = e.currentTarget;
@@ -119,17 +112,7 @@ setTimeout(function() {
 // Overview main - 'See all features' button scrolls to top and opens features tab
 var featuresButton = document.querySelector('#article-1-section-2 #features-link');
 function featuresButtonClick() {
-	// Inactivate 'Overview' tab and article
-	document.querySelector('.tabs #tab-1').setAttribute('data-state', 'inactive');
-	document.querySelector('#article-1').setAttribute('data-state', 'inactive');
-
-	// Activate 'Features' tab and article
-	document.querySelector('.tabs #tab-2').setAttribute('data-state', 'active');
-	document.querySelector('#article-2').setAttribute('data-state', 'active');
-
-	// Animate scroll to top of tabs
-	var tabMarker = $('#tab-marker').offset().top;
-	$("html, body").animate({ scrollTop: tabMarker }, 200);
+	showTab("features");
 }
 featuresButton.addEventListener("click", featuresButtonClick);
 
@@ -158,7 +141,7 @@ window.addEventListener("scroll", bodyScroll);
 
 // Modal use case story
 var closeButton = document.querySelector(".modal-container > svg");
-var useCaseText = document.querySelector("main #article-4 .use-case .example");
+var useCaseText = document.querySelector("main #article-use-cases .use-case .example");
 var modal = document.querySelector(".modal-container");
 var overlay = document.querySelector(".modal-overlay");
 function toggleModal() {
@@ -181,3 +164,19 @@ function toggleModal() {
 useCaseText.addEventListener('click', toggleModal);
 closeButton.addEventListener('click', toggleModal);
 overlay.addEventListener('click', toggleModal);
+
+document.addEventListener('DOMContentLoaded', function() {
+
+	// Parse URL for params
+	var urlParams = {};
+	window.location.href.replace(
+	    new RegExp("([^?=&]+)(=([^&]*))?", "g"),
+	    function($0, $1, $2, $3) { urlParams[$1] = $3; }
+	);
+
+	// If there is a "tab" URL param, make sure the corresponding content is shown
+	//   and the appropriate tab is selected
+	if (urlParams.tab) {
+		showTab(urlParams.tab);
+	}
+}, false);
