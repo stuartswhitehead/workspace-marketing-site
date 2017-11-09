@@ -1258,131 +1258,131 @@ main #primary-content article {
   main #primary-content article #firstFaq {
     border-top: none; }
 
-main #primary-content #article-2 .secondary-section {
+main #primary-content #article-features .secondary-section {
   background: #8B5BDC; }
 
-main #primary-content #article-3 .secondary-section {
+main #primary-content #article-faq .secondary-section {
   background: #418DBC; }
 
-main #primary-content #article-4 .use-case .primary.container {
+main #primary-content #article-use-cases .use-case .primary.container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 3.75rem 15px; }
-  main #primary-content #article-4 .use-case .primary.container img {
+  main #primary-content #article-use-cases .use-case .primary.container img {
     height: 23.375rem; }
-  main #primary-content #article-4 .use-case .primary.container .text {
+  main #primary-content #article-use-cases .use-case .primary.container .text {
     flex: 0 0 45%; }
-    main #primary-content #article-4 .use-case .primary.container .text > h4 {
+    main #primary-content #article-use-cases .use-case .primary.container .text > h4 {
       font-size: 2em;
       font-weight: 500; }
-    main #primary-content #article-4 .use-case .primary.container .text .example {
+    main #primary-content #article-use-cases .use-case .primary.container .text .example {
       display: flex;
       align-items: center;
       color: #1D3649;
       cursor: pointer;
       font-weight: 500;
       margin-top: 1.5rem; }
-      main #primary-content #article-4 .use-case .primary.container .text .example img {
+      main #primary-content #article-use-cases .use-case .primary.container .text .example img {
         margin-right: 1rem;
         width: 3rem;
         height: 3rem;
         border-radius: 50rem; }
-      main #primary-content #article-4 .use-case .primary.container .text .example p {
+      main #primary-content #article-use-cases .use-case .primary.container .text .example p {
         margin-bottom: 0; }
 
-main #primary-content #article-4 .use-case:nth-child(even) {
+main #primary-content #article-use-cases .use-case:nth-child(even) {
   background: #FAFAFA; }
 
-main #primary-content #article-4 .secondary-section {
+main #primary-content #article-use-cases .secondary-section {
   background: #00A78F; }
 
-main #primary-content #article-5 .main-section > section {
+main #primary-content #article-developers .main-section > section {
   padding: 3.375rem 0; }
-  main #primary-content #article-5 .main-section > section h4 {
+  main #primary-content #article-developers .main-section > section h4 {
     font-weight: 600;
     color: #1D3649;
     font-size: 2.875em;
     margin: 0 auto 4.375rem;
     text-align: center; }
-  main #primary-content #article-5 .main-section > section h5 {
+  main #primary-content #article-developers .main-section > section h5 {
     color: #1D3649;
     font-size: 2em;
     font-weight: 500; }
-  main #primary-content #article-5 .main-section > section .flex-columns {
+  main #primary-content #article-developers .main-section > section .flex-columns {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    main #primary-content #article-5 .main-section > section .flex-columns > p, main #primary-content #article-5 .main-section > section .flex-columns .left-column {
+    main #primary-content #article-developers .main-section > section .flex-columns > p, main #primary-content #article-developers .main-section > section .flex-columns .left-column {
       flex: 0 0 46%; }
-      main #primary-content #article-5 .main-section > section .flex-columns > p > img, main #primary-content #article-5 .main-section > section .flex-columns .left-column > img {
+      main #primary-content #article-developers .main-section > section .flex-columns > p > img, main #primary-content #article-developers .main-section > section .flex-columns .left-column > img {
         height: 5.5rem;
         width: 5.5rem;
         border-radius: 1rem; }
-    main #primary-content #article-5 .main-section > section .flex-columns #message {
+    main #primary-content #article-developers .main-section > section .flex-columns #message {
       display: flex;
       align-items: center;
       justify-content: center;
       flex: 0 0 46%; }
-      main #primary-content #article-5 .main-section > section .flex-columns #message img {
+      main #primary-content #article-developers .main-section > section .flex-columns #message img {
         height: 3.6rem;
         width: 3.6rem; }
-      main #primary-content #article-5 .main-section > section .flex-columns #message .text {
+      main #primary-content #article-developers .main-section > section .flex-columns #message .text {
         margin-left: 2rem; }
-        main #primary-content #article-5 .main-section > section .flex-columns #message .text .top-text {
+        main #primary-content #article-developers .main-section > section .flex-columns #message .text .top-text {
           color: #1D3649;
           font-size: 1.462em;
           font-weight: 500; }
-          main #primary-content #article-5 .main-section > section .flex-columns #message .text .top-text .time {
+          main #primary-content #article-developers .main-section > section .flex-columns #message .text .top-text .time {
             color: #777677;
             font-weight: 400;
             margin-left: 0.3rem; }
-        main #primary-content #article-5 .main-section > section .flex-columns #message .text .bottom-text {
+        main #primary-content #article-developers .main-section > section .flex-columns #message .text .bottom-text {
           margin-top: 1.3rem;
           font-size: 1.8em;
           font-weight: 300;
           color: #152935;
           line-height: 2.4rem; }
-          main #primary-content #article-5 .main-section > section .flex-columns #message .text .bottom-text .action {
+          main #primary-content #article-developers .main-section > section .flex-columns #message .text .bottom-text .action {
             text-decoration: underline;
             text-decoration-color: #8B5BDC; }
-  main #primary-content #article-5 .main-section > section .ui {
+  main #primary-content #article-developers .main-section > section .ui {
     border-radius: 0.338rem;
     -webkit-box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2);
     background: white; }
-  main #primary-content #article-5 .main-section > section #menu-actions {
+  main #primary-content #article-developers .main-section > section #menu-actions {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 5rem; }
-    main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-text {
+    main #primary-content #article-developers .main-section > section #menu-actions #menu-actions-text {
       flex: 0 0 18.75rem;
       margin-right: 2rem;
       margin-top: 3.5rem; }
-      main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-text p {
+      main #primary-content #article-developers .main-section > section #menu-actions #menu-actions-text p {
         margin-bottom: 0; }
-    main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown {
+    main #primary-content #article-developers .main-section > section #menu-actions #menu-actions-img #ui-dropdown {
       position: relative;
       width: 23rem;
       padding: 1.125rem 0; }
-      main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action {
+      main #primary-content #article-developers .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action {
         padding: 1.125rem 2.475rem; }
-        main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action .app-title {
+        main #primary-content #article-developers .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action .app-title {
           color: #777677;
           font-size: 1.125em; }
-        main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action .app-action {
+        main #primary-content #article-developers .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action .app-action {
           color: #1D3649;
           font-size: 1.575em; }
-      main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown > img {
+      main #primary-content #article-developers .main-section > section #menu-actions #menu-actions-img #ui-dropdown > img {
         position: absolute;
         top: 11.5rem;
         left: 14rem; }
-      main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action:nth-of-type(2) .app-action {
+      main #primary-content #article-developers .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action:nth-of-type(2) .app-action {
         font-weight: 500; }
-      main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action.selected {
+      main #primary-content #article-developers .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action.selected {
         position: relative; }
-        main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action.selected .app-action::before {
+        main #primary-content #article-developers .main-section > section #menu-actions #menu-actions-img #ui-dropdown .message-action.selected .app-action::before {
           content: "";
           height: 2.5rem;
           width: 0.45rem;
@@ -1391,76 +1391,76 @@ main #primary-content #article-5 .main-section > section {
           position: absolute;
           left: 0;
           top: 2.6rem; }
-  main #primary-content #article-5 .main-section > section #slash-command {
+  main #primary-content #article-developers .main-section > section #slash-command {
     width: 46rem; }
-    main #primary-content #article-5 .main-section > section #slash-command > p {
+    main #primary-content #article-developers .main-section > section #slash-command > p {
       margin-bottom: 1rem; }
-    main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command {
+    main #primary-content #article-developers .main-section > section #slash-command #ui-slash-command {
       padding: 1.125rem 1.5rem;
       border: 1px solid #ECECEC; }
-      main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command > div {
+      main #primary-content #article-developers .main-section > section #slash-command #ui-slash-command > div {
         display: flex;
         align-items: center; }
-      main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #top-row {
+      main #primary-content #article-developers .main-section > section #slash-command #ui-slash-command #top-row {
         margin-bottom: 1rem; }
-        main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #top-row p {
+        main #primary-content #article-developers .main-section > section #slash-command #ui-slash-command #top-row p {
           color: #777677;
           font-size: 1.35em;
           margin-right: 0.5rem; }
-        main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #top-row #line {
+        main #primary-content #article-developers .main-section > section #slash-command #ui-slash-command #top-row #line {
           background-color: rgba(149, 159, 159, 0.1);
           height: 0.15rem;
           width: 35.55rem; }
-      main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #bottom-row .command {
+      main #primary-content #article-developers .main-section > section #slash-command #ui-slash-command #bottom-row .command {
         color: #1D3649;
         font-size: 1.8em;
         margin-right: 1rem; }
-      main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #bottom-row .args {
+      main #primary-content #article-developers .main-section > section #slash-command #ui-slash-command #bottom-row .args {
         color: #777677;
         font-size: 1.462em; }
-      main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #bottom-row .help-text {
+      main #primary-content #article-developers .main-section > section #slash-command #ui-slash-command #bottom-row .help-text {
         color: #777677;
         font-size: 1.462em;
         text-align: right;
         font-style: italic;
         margin-left: auto; }
-  main #primary-content #article-5 .main-section > section #section-4 {
+  main #primary-content #article-developers .main-section > section #section-4 {
     display: flex;
     justify-content: center; }
-    main #primary-content #article-5 .main-section > section #section-4 p {
+    main #primary-content #article-developers .main-section > section #section-4 p {
       margin-bottom: 0; }
-    main #primary-content #article-5 .main-section > section #section-4 .left-content {
+    main #primary-content #article-developers .main-section > section #section-4 .left-content {
       flex: 0 0 33rem;
       margin-right: 5rem; }
-      main #primary-content #article-5 .main-section > section #section-4 .left-content p, main #primary-content #article-5 .main-section > section #section-4 .left-content span {
+      main #primary-content #article-developers .main-section > section #section-4 .left-content p, main #primary-content #article-developers .main-section > section #section-4 .left-content span {
         font-size: 1.575em;
         color: #1D3649; }
-      main #primary-content #article-5 .main-section > section #section-4 .left-content .card-titles {
+      main #primary-content #article-developers .main-section > section #section-4 .left-content .card-titles {
         display: flex;
         align-items: center;
         margin-bottom: 2.5rem; }
-        main #primary-content #article-5 .main-section > section #section-4 .left-content .card-titles img {
+        main #primary-content #article-developers .main-section > section #section-4 .left-content .card-titles img {
           height: 2.025rem;
           width: 2.025rem;
           margin-right: 1rem;
           border-radius: 0.5rem; }
-        main #primary-content #article-5 .main-section > section #section-4 .left-content .card-titles .app-action {
+        main #primary-content #article-developers .main-section > section #section-4 .left-content .card-titles .app-action {
           font-weight: 500;
           margin-left: 1rem; }
-      main #primary-content #article-5 .main-section > section #section-4 .left-content .card {
+      main #primary-content #article-developers .main-section > section #section-4 .left-content .card {
         padding: 2rem;
         background-color: white;
         position: relative;
         font-size: 0.9em; }
-        main #primary-content #article-5 .main-section > section #section-4 .left-content .card .card-description {
+        main #primary-content #article-developers .main-section > section #section-4 .left-content .card .card-description {
           font-weight: 500;
           margin-bottom: 0.5rem; }
-        main #primary-content #article-5 .main-section > section #section-4 .left-content .card .card-assignee, main #primary-content #article-5 .main-section > section #section-4 .left-content .card .card-date {
+        main #primary-content #article-developers .main-section > section #section-4 .left-content .card .card-assignee, main #primary-content #article-developers .main-section > section #section-4 .left-content .card .card-date {
           color: #464646;
           font-weight: 300; }
-        main #primary-content #article-5 .main-section > section #section-4 .left-content .card .card-assignee {
+        main #primary-content #article-developers .main-section > section #section-4 .left-content .card .card-assignee {
           margin-right: 1.5rem; }
-        main #primary-content #article-5 .main-section > section #section-4 .left-content .card .card-assignee::after {
+        main #primary-content #article-developers .main-section > section #section-4 .left-content .card .card-assignee::after {
           content: "";
           position: absolute;
           height: 8px;
@@ -1469,65 +1469,65 @@ main #primary-content #article-5 .main-section > section {
           background-color: #D0DADA;
           top: 5.1rem;
           left: 9.25rem; }
-        main #primary-content #article-5 .main-section > section #section-4 .left-content .card .card-data {
+        main #primary-content #article-developers .main-section > section #section-4 .left-content .card .card-data {
           color: #777677;
           margin: 1.5rem 0 3rem;
           line-height: 1.8rem; }
-        main #primary-content #article-5 .main-section > section #section-4 .left-content .card .card-button {
+        main #primary-content #article-developers .main-section > section #section-4 .left-content .card .card-button {
           padding: 0.9rem 0;
           width: 14rem;
           border: 2px solid #9855D4;
           border-radius: 11.25rem; }
-          main #primary-content #article-5 .main-section > section #section-4 .left-content .card .card-button p {
+          main #primary-content #article-developers .main-section > section #section-4 .left-content .card .card-button p {
             color: #9855D4;
             text-align: center; }
-    main #primary-content #article-5 .main-section > section #section-4 .right-content {
+    main #primary-content #article-developers .main-section > section #section-4 .right-content {
       position: relative;
       flex: 0 0 30%; }
-      main #primary-content #article-5 .main-section > section #section-4 .right-content p:first-of-type {
+      main #primary-content #article-developers .main-section > section #section-4 .right-content p:first-of-type {
         margin-bottom: 1rem; }
-      main #primary-content #article-5 .main-section > section #section-4 .right-content p:nth-of-type(2) {
+      main #primary-content #article-developers .main-section > section #section-4 .right-content p:nth-of-type(2) {
         font-size: 1.125em; }
-        main #primary-content #article-5 .main-section > section #section-4 .right-content p:nth-of-type(2) a {
+        main #primary-content #article-developers .main-section > section #section-4 .right-content p:nth-of-type(2) a {
           color: #4178be; }
 
-main #primary-content #article-5 .main-section > section:nth-of-type(1) .flex-columns .left-column {
+main #primary-content #article-developers .main-section > section:nth-of-type(1) .flex-columns .left-column {
   display: flex;
   align-items: center;
   justify-content: center; }
-  main #primary-content #article-5 .main-section > section:nth-of-type(1) .flex-columns .left-column > p {
+  main #primary-content #article-developers .main-section > section:nth-of-type(1) .flex-columns .left-column > p {
     color: #1D3649;
     font-size: 3.5em;
     font-weight: 300;
     margin-left: 1.375rem;
     margin-bottom: 0; }
 
-main #primary-content #article-5 .main-section > section:nth-of-type(3) {
+main #primary-content #article-developers .main-section > section:nth-of-type(3) {
   padding: 2.625rem 0; }
 
-main #primary-content #article-5 .main-section > section:nth-child(even) {
+main #primary-content #article-developers .main-section > section:nth-child(even) {
   background: #FAFAFA; }
 
-main #primary-content #article-5 #dev-case-container {
-  background: #1D3649;
+main #primary-content #article-developers #dev-case-container {
+  background: linear-gradient(315deg, #1D3649 0%, #1C496D 100%);
   padding: 5rem 0; }
-  main #primary-content #article-5 #dev-case-container #dev-case-content {
+  main #primary-content #article-developers #dev-case-container #dev-case-content {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    main #primary-content #article-5 #dev-case-container #dev-case-content img {
+    main #primary-content #article-developers #dev-case-container #dev-case-content img {
       height: 23.375rem;
       border-radius: 100rem; }
-    main #primary-content #article-5 #dev-case-container #dev-case-content div {
+    main #primary-content #article-developers #dev-case-container #dev-case-content div {
       flex: 0 0 61%;
       line-height: 2.5rem;
       color: white; }
-      main #primary-content #article-5 #dev-case-container #dev-case-content div > * {
+      main #primary-content #article-developers #dev-case-container #dev-case-content div > * {
         color: white; }
-      main #primary-content #article-5 #dev-case-container #dev-case-content div p {
+      main #primary-content #article-developers #dev-case-container #dev-case-content div p {
         margin-bottom: 2.5rem; }
 
-main #primary-content #article-5 .secondary-section {
+main #primary-content #article-developers .secondary-section {
   background: #DB2780; }
 
 main #primary-content article[data-state="active"] {
@@ -1668,7 +1668,7 @@ footer {
     display: initial; }
   main #primary-content article #article-1-section-2 .overview-img-and-text .images .overview-img-wrapper img {
     width: 81%; }
-  main #primary-content #article-5 #dev-case-container #dev-case-content div {
+  main #primary-content #article-developers #dev-case-container #dev-case-content div {
     flex: 0 0 50%; }
   footer .container ol {
     justify-content: space-between; }
@@ -1768,43 +1768,43 @@ footer {
   main #primary-content article #article-1-section-4 #sections section {
     flex: 0 0 45%;
     margin-bottom: 2rem; }
-  main #primary-content #article-4 .use-case .primary.container img {
+  main #primary-content #article-use-cases .use-case .primary.container img {
     height: 16rem; }
-  main #primary-content #article-5 .main-section > section h4 {
+  main #primary-content #article-developers .main-section > section h4 {
     margin-bottom: 3rem;
     text-align: left; }
-  main #primary-content #article-5 .main-section > section h5 {
+  main #primary-content #article-developers .main-section > section h5 {
     margin-bottom: 1rem; }
-  main #primary-content #article-5 .main-section > section .flex-columns {
+  main #primary-content #article-developers .main-section > section .flex-columns {
     flex-wrap: wrap; }
-    main #primary-content #article-5 .main-section > section .flex-columns .left-column, main #primary-content #article-5 .main-section > section .flex-columns > p {
+    main #primary-content #article-developers .main-section > section .flex-columns .left-column, main #primary-content #article-developers .main-section > section .flex-columns > p {
       flex: 0 0 100%; }
-    main #primary-content #article-5 .main-section > section .flex-columns #message {
+    main #primary-content #article-developers .main-section > section .flex-columns #message {
       flex: 0 0 100%;
       margin-top: 3rem; }
-  main #primary-content #article-5 .main-section > section #menu-actions {
+  main #primary-content #article-developers .main-section > section #menu-actions {
     justify-content: flex-start; }
-  main #primary-content #article-5 .main-section > section #slash-command {
+  main #primary-content #article-developers .main-section > section #slash-command {
     width: 44rem; }
-    main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command #top-row #line {
+    main #primary-content #article-developers .main-section > section #slash-command #ui-slash-command #top-row #line {
       width: 33.55rem; }
-  main #primary-content #article-5 .main-section > section #section-4 {
+  main #primary-content #article-developers .main-section > section #section-4 {
     flex-wrap: wrap;
     justify-content: flex-start; }
-    main #primary-content #article-5 .main-section > section #section-4 .left-content {
+    main #primary-content #article-developers .main-section > section #section-4 .left-content {
       margin: 0 0 2rem; }
-    main #primary-content #article-5 .main-section > section #section-4 .right-content {
+    main #primary-content #article-developers .main-section > section #section-4 .right-content {
       display: flex;
       flex: 0 0 100%;
       flex-wrap: wrap; }
-      main #primary-content #article-5 .main-section > section #section-4 .right-content > p {
+      main #primary-content #article-developers .main-section > section #section-4 .right-content > p {
         flex: 0 0 65%; }
-  main #primary-content #article-5 .main-section > section:nth-of-type(1) .flex-columns .left-column {
+  main #primary-content #article-developers .main-section > section:nth-of-type(1) .flex-columns .left-column {
     justify-content: flex-start;
     margin-bottom: 2rem; }
-  main #primary-content #article-5 #dev-case-container #dev-case-content img {
+  main #primary-content #article-developers #dev-case-container #dev-case-content img {
     display: none; }
-  main #primary-content #article-5 #dev-case-container #dev-case-content div {
+  main #primary-content #article-developers #dev-case-container #dev-case-content div {
     flex: 0 0 100%; }
   footer .container ol > a, footer .container ol #appLinks {
     flex: 0 0 45%;
@@ -1846,30 +1846,30 @@ footer {
       margin-left: 0; }
   main #primary-content article .faq .question h3 {
     font-size: 1.2em; }
-  main #primary-content #article-4 .use-case .primary.container > img {
+  main #primary-content #article-use-cases .use-case .primary.container > img {
     display: none; }
-  main #primary-content #article-4 .use-case .primary.container .text {
+  main #primary-content #article-use-cases .use-case .primary.container .text {
     flex: 0 0 100%; }
-  main #primary-content #article-5 .main-section > section #menu-actions {
+  main #primary-content #article-developers .main-section > section #menu-actions {
     justify-content: flex-start;
     flex-wrap: wrap; }
-    main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-text {
+    main #primary-content #article-developers .main-section > section #menu-actions #menu-actions-text {
       flex: 0 0 100%;
       margin-bottom: 2rem;
       margin-right: 0;
       margin-top: 0; }
-    main #primary-content #article-5 .main-section > section #menu-actions #menu-actions-img {
+    main #primary-content #article-developers .main-section > section #menu-actions #menu-actions-img {
       margin-left: auto; }
-  main #primary-content #article-5 .main-section > section #slash-command {
+  main #primary-content #article-developers .main-section > section #slash-command {
     width: 34rem; }
-    main #primary-content #article-5 .main-section > section #slash-command #ui-slash-command {
+    main #primary-content #article-developers .main-section > section #slash-command #ui-slash-command {
       font-size: 0.9em; }
-  main #primary-content #article-5 .main-section > section #section-4 {
+  main #primary-content #article-developers .main-section > section #section-4 {
     flex-wrap: wrap; }
-    main #primary-content #article-5 .main-section > section #section-4 .left-content .card .card-assignee:after {
+    main #primary-content #article-developers .main-section > section #section-4 .left-content .card .card-assignee:after {
       left: 8.8rem;
       top: 4.9rem; }
-    main #primary-content #article-5 .main-section > section #section-4 .right-content > p {
+    main #primary-content #article-developers .main-section > section #section-4 .right-content > p {
       flex: 0 0 100%; } }
 
 @media only screen and (max-width: 30em) {
@@ -1895,11 +1895,11 @@ footer {
       margin-left: 0; }
     main #primary-content article .secondary-section .container .white-circle {
       display: none; }
-  main #primary-content #article-5 .main-section > section #slash-command {
+  main #primary-content #article-developers .main-section > section #slash-command {
     width: 23rem; }
-  main #primary-content #article-5 .main-section > section #section-4 .left-content {
+  main #primary-content #article-developers .main-section > section #section-4 .left-content {
     flex: 0 0 23rem; }
-    main #primary-content #article-5 .main-section > section #section-4 .left-content .card .card-assignee:after {
+    main #primary-content #article-developers .main-section > section #section-4 .left-content .card .card-assignee:after {
       top: 6.2rem;
       left: 8.8rem; }
   footer .container ol > a, footer .container ol #appLinks {
