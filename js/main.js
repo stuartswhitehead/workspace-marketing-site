@@ -8,6 +8,11 @@ overflowButton.addEventListener("click", toggleOverflowTabMenu);
 
 // Switch tabs, hide/show the appropriate content, select the corresponding tabs
 function showTab(tabName) {
+	// Invalid tab name check
+	if (!document.querySelector('#' + tabName)) {
+		return;
+	}
+
 	// Switch active tab
 	var oldActiveTab = document.querySelector('.tabs .tab-value[data-state="active"]');
 	oldActiveTab.setAttribute('data-state', 'inactive');
