@@ -1645,6 +1645,8 @@ footer {
       line-height: 1.7rem; }
     .modal-container .modal-content p:last-child {
       margin-bottom: 0; }
+  .modal-container .modal-content[data-state="inactive"] {
+    display: none; }
 
 .modal {
   display: none; }
