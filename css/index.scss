@@ -589,7 +589,7 @@ main {
 
 			#article-1-section-3 {
 				background: linear-gradient(315deg, #1D3649 0%, #1C496D 100%);;
-				padding: 6.5rem 0;
+				padding: 3.875rem 0;
 
 				.container {
 					display: flex;
@@ -597,31 +597,40 @@ main {
 					align-items: center;
 					flex-wrap: wrap;
 
-					.text {
-						flex: 0 0 47%;
+					h2, p {
+						color: white;
+					}
 
-						.button {
-							color: $purple1;
-							border: 1px solid $purple1;
-						}
-						.button:hover {
-							border-width: 2px;
+					h2 {
+						margin: 0 auto 2.5rem;
+						text-align: center;
+					}
+
+					#sections {
+						display: flex;
+						justify-content: space-between;
+						margin-bottom: 3.0rem;
+
+						section {
+							display: flex;
+							flex: 0 0 29%;
+							flex-direction: column;
+
+							img {
+								margin: 0 auto 1rem;
+							}
 						}
 					}
 
-					img {
-						flex: 0 0 42%;
+					.button {
+						color: $purple1;
+						border: 1px solid $purple1;
+						margin: 0 auto;
 					}
-				}
-
-				h2 {
-					color: $purple1;
-				}
-
-				p {
-					color: white;
-					padding-bottom: 2rem;
-				}
+					.button:hover {
+						border-width: 2px;
+					}
+				}				
 			}
 
 			#article-1-section-4 {
@@ -1577,21 +1586,6 @@ footer {
 					}
 				}
 
-				#article-1-section-3 {
-					.container {
-						.text {
-							flex: 0 0 100%;
-							order: 2;
-						}
-
-						img {
-							order: 1;
-							margin-bottom: 4rem;
-							flex: 0 0 65%;
-						}
-					}
-				}
-
 				#article-1-section-4 {
 					#sections {
 						section {
@@ -1774,6 +1768,19 @@ footer {
 					.overview-img-and-text {
 						.images {
 							flex: 0 0 82%;
+						}
+					}
+				}
+
+				#article-1-section-3 {
+					.container {
+						#sections {
+							flex-wrap: wrap;
+
+							section {
+								flex: 0 0 100%;
+								margin-bottom: 2rem;
+							}
 						}
 					}
 				}
