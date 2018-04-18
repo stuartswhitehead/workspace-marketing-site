@@ -193,3 +193,46 @@ document.addEventListener('DOMContentLoaded', function() {
 		showTab(urlParams.tab);
 	}
 }, false);
+
+var getJSON = function(url, callback) {
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', url, true);
+	xhr.responseType = 'json';
+	xhr.onload = function() {
+		var status = xhr.status;
+		if (status === 200) {
+			callback(null, xhr.response);
+		} else {
+			callback(status, xhr.response);
+		}
+	};
+	xhr.send();
+};
+var statusURL = 'https://api.status.io/1.0/status/5a25f61f15f9ee756dc775de'; 
+var statusDot = document.querySelector(".status-dot");
+getJSON(statusURL,
+	function(err, data) {
+	if (err !== null) {
+		window.console.log('Something went wrong: ' + err);
+	} else {
+		var currentStatus = data.result.status_overall.status_code;
+		switch(currentStatus) {
+			case "100":
+				break;
+			case "300":
+				statusDot.classList += " orange";
+				break;
+			case "400":
+				statusDot.classList += " orange";
+				break;
+			case "500":
+				statusDot.classList += " red";
+				break;
+			case "600":
+				statusDot.classList += " red";
+				break;
+			default:
+				break;
+		}
+	}
+});

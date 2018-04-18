@@ -1576,6 +1576,15 @@ footer {
           -moz-transition: color 0.2s ease-out;
           -o-transition: color 0.2s ease-out;
           transition: color 0.2s ease-out; }
+        footer .container ol > a li .status-dot {
+          width: 0.875rem;
+          height: 0.875rem;
+          border-radius: 10rem;
+          background: #06c665; }
+          footer .container ol > a li .status-dot.orange {
+            background: #fcce00; }
+          footer .container ol > a li .status-dot.red {
+            background: #db003e; }
     footer .container ol > a:first-child {
       margin-left: 0; }
     footer .container ol > a:hover li svg {

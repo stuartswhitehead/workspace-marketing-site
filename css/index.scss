@@ -1277,6 +1277,20 @@ footer {
 						display: inline-block;
 						@include transition(color .2s ease-out);
 					}
+
+					.status-dot {
+						width: 0.875rem;
+						height: 0.875rem;
+						border-radius: 10rem;
+						background: #06c665;
+
+						&.orange {
+							background: #fcce00;
+						}
+						&.red {
+							background: #db003e;
+						}
+					}
 				}
 			}
 
