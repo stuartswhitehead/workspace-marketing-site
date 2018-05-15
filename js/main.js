@@ -212,27 +212,28 @@ var statusURL = 'https://api.status.io/1.0/status/5a25f61f15f9ee756dc775de';
 var statusDot = document.querySelector(".status-dot");
 getJSON(statusURL,
 	function(err, data) {
-	if (err !== null) {
-		window.console.log('Something went wrong: ' + err);
-	} else {
-		var currentStatus = data.result.status_overall.status_code;
-		switch(currentStatus) {
-			case "100":
-				break;
-			case "300":
-				statusDot.classList += " orange";
-				break;
-			case "400":
-				statusDot.classList += " orange";
-				break;
-			case "500":
-				statusDot.classList += " red";
-				break;
-			case "600":
-				statusDot.classList += " red";
-				break;
-			default:
-				break;
+		if (err !== null) {
+			window.console.log('Something went wrong: ' + err);
+		} else {
+			var currentStatus = data.result.status_overall.status_code;
+			switch(currentStatus) {
+				case 100:
+					break;
+				case 300:
+					statusDot.classList += " orange";
+					break;
+				case 400:
+					statusDot.classList += " orange";
+					break;
+				case 500:
+					statusDot.classList += " red";
+					break;
+				case 600:
+					statusDot.classList += " red";
+					break;
+				default:
+					break;
+			}
 		}
 	}
-});
+);
