@@ -178,6 +178,7 @@ for (var i = 0; i < useCaseText.length; i++) {
 closeButton.addEventListener('click', toggleModal);
 overlay.addEventListener('click', toggleModal);
 
+// Send user to right tab based on URL
 document.addEventListener('DOMContentLoaded', function() {
 
 	// Parse URL for params
@@ -194,6 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 }, false);
 
+// Color status dot with current status
 var getJSON = function(url, callback) {
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', url, true);
