@@ -1,8 +1,10 @@
 @import 'reset';
 @import 'ibm-colors';
+$font-prefix: '../..';
+@import './ibm-plex/ibm-plex';
 
 html, body {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 400;
     height: 100%;
     width: 100%;
